@@ -1,7 +1,13 @@
 import Link from 'next/link';
 
-const ButtonOrLink = ({ isLink, href, children, ...props }) => {
-  const className = 'custom-button'; // Defina suas classes e estilos comuns aqui
+const ButtonOrLink = ({
+  isLink,
+  href,
+  children,
+  color = 'default',
+  ...props
+}) => {
+  const className = `btn bg-${color}`;
 
   if (isLink) {
     return (
