@@ -5,6 +5,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --custom__blue: #0051ff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,4 +25,17 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+@layer base {
+  .btn {
+    padding: 20px 50px;
+    border-radius: 44px;
+    /* 44px ou 84px */
+  }
+}
+
+/* test */
+.text-reveal-container {
+  padding: 20px;
 }
