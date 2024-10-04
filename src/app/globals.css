@@ -3,21 +3,18 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
   --custom__blue: #0051ff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
   }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: white;
+  background-color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -29,8 +26,13 @@ body {
 
 @layer base {
   .btn {
-    padding: 20px 50px;
+    @apply py-[20px] px-[50px] rounded-[44px] flex items-center overflow-hidden relative text-white;
+    /* padding: 20px 50px;
     border-radius: 44px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative; */
     /* 44px ou 84px */
   }
 }
