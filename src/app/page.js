@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 /* components */
 import Hero from '@/components/Hero';
 
@@ -6,6 +8,7 @@ import InteractiveGallery from '@/components/InteractiveGallery';
 import ButtonOrLink from '@/components/ButtonOrLink';
 import AppSection from '@/components/AppSection';
 import InfiniteMovingLetters from '@/components/InfiniteMovingLetters';
+import TradingPlataform from '@/components/TradingPlataform';
 export default function Home() {
   const items = [
     {
@@ -65,7 +68,79 @@ export default function Home() {
       {/* app section */}
       <AppSection />
 
+      <TradingPlataform />
+
       <InteractiveGallery />
+
+      <section className="text-black py-10">
+        <div className="container mx-auto">
+          <div className="flex flex-col gap-y-6 items-center justify-center text-center">
+            <h2 className="text-5xl">Negocie como um pro!</h2>
+
+            <p className="text-lg max-w-[800px] leading-normal">
+              Negocie CFDs de uma vasta gama de instrumentos, incluindo os{' '}
+              <Link
+                href="/trading/forex"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline"
+              >
+                pares FX
+              </Link>{' '}
+              mais populares,{' '}
+              <Link
+                href="/trading/futures"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline"
+              >
+                Futuros
+              </Link>
+              ,{' '}
+              <Link
+                href="/trading/indices"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline"
+              >
+                Índices
+              </Link>
+              ,{' '}
+              <Link
+                href="/trading/metals"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline"
+              >
+                Metais
+              </Link>
+              ,{' '}
+              <Link
+                href="/trading/energies"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline"
+              >
+                Energias
+              </Link>{' '}
+              e{' '}
+              <Link
+                href="/trading/shares"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline"
+              >
+                Ações
+              </Link>
+              , com os mercados globais na palma da sua mão.
+            </p>
+
+            <ButtonOrLink className="bg-custom__blue text-white" href={'/'}>
+              Registre-se com os Pros
+            </ButtonOrLink>
+          </div>
+        </div>
+      </section>
 
       {/* Animação da esquerda para a direita */}
       {/* <TextReveal color="lightblue" direction="left" duration={1}>
