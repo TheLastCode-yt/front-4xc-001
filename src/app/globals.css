@@ -35,6 +35,14 @@ body {
     position: relative; */
     /* 44px ou 84px */
   }
+
+  .amount-orders__number {
+    background: linear-gradient(90.88deg, #000 0%, #7c7c7c 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: rgba(0, 0, 0, 0);
+    letter-spacing: -0.05em;
+  }
 }
 
 /* test */

@@ -1,6 +1,7 @@
 'use client';
 import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
+import { cn } from '@/lib/utils';
 
 const TextReveal = ({
   children,
@@ -8,6 +9,7 @@ const TextReveal = ({
   as: Element = 'h1',
   duration = 1,
   direction = 'left',
+  className,
 }) => {
   const textRef = useRef(null);
   const [divWidth, setDivWidth] = useState(0);
@@ -61,9 +63,10 @@ const TextReveal = ({
       />
       <Element
         ref={textRef}
+        className={cn(className)}
         style={{
           visibility: hasAnimated ? 'visible' : 'hidden',
-          whiteSpace: 'nowrap',
+          // whiteSpace: 'nowrap',
         }}
       >
         {children}
