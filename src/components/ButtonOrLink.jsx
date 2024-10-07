@@ -16,7 +16,7 @@ const ButtonOrLink = ({
   );
 
   const arrowClasses = clsx(
-    'translate-y-[300%] group-hover:-translate-y-0 transition-all duration-500 h-4 w-4 fill-current',
+    'w-0 translate-y-[300%] group-hover:-translate-y-0 group-hover:w-4 transition-all duration-500 h-4  fill-current',
     arrowClass
   );
 

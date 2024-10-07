@@ -46,10 +46,11 @@ const Header = () => {
           <div className="flex items-center gap-x-2">
             <ButtonOrLink
               href="/"
-              className={'bg-custom__blue px-[20px] py-[15px]'}
+              className={'bg-custom__blue px-[20px] py-[10px]'}
             >
               Registre-se
             </ButtonOrLink>
+
             <ButtonOrLink
               href="/"
               className={'px-[30px] text-blue-500 bg-transparent'}
