@@ -5,7 +5,7 @@ import Link from 'next/link';
 const HistoryOrdersSection = () => {
   return (
     <section
-      className="bg-no-repeat bg-cover h-screen bg-bottom"
+      className="bg-no-repeat bg-cover h-[80vh] bg-bottom"
       style={{
         backgroundImage: "url('/images/bg-section-new.webp')",
       }}
