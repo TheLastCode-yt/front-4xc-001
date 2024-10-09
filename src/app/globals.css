@@ -25,6 +25,10 @@ body {
 }
 
 @layer base {
+  .btn-common {
+    @apply text-lg relative inline-flex items-center justify-center rounded-lg transition-all duration-300 min-w-[230px] min-h-[70px] px-8 py-6;
+  }
+
   .btn {
     @apply py-[20px] px-[50px] rounded-[44px] flex items-center overflow-hidden relative text-white;
     /* padding: 20px 50px;
