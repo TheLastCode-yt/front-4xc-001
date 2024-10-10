@@ -76,6 +76,6 @@ body {
 .carousel-active {
   /* overflow: hidden; */
   white-space: nowrap;
-  animation: scroll 16s linear infinite;
+  animation: scroll 18s linear infinite;
   -webkit-text-stroke: 1px #d9d9d9;
 }
