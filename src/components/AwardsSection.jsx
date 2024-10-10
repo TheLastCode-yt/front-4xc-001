@@ -27,14 +27,14 @@ const AwardsSection = () => {
     <section>
       <div className="container mx-auto">
         <div className="flex flex-col gap-y-10 items-center justify-center">
-          <h2 className="text-[#2d3436] text-5xl">
+          <h2 className="text-[#2d3436] text-2xl sm:text-4xl xl:text-5xl text-center">
             112+ prêmios no Reino Unido e internacional
           </h2>
 
           <div className="w-full">
-            <ul className="flex items-center justify-between">
+            <ul className="flex items-center justify-center gap-10 xl:justify-between flex-wrap">
               {awardsData.map((award, index) => (
-                <li key={index} className="flex-1 max-w-[25%]" key={index}>
+                <li key={index} className=" xl:flex-1 xl:max-w-[25%]">
                   <AwardCard {...award} />
                 </li>
               ))}

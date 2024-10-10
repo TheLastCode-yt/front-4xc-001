@@ -22,12 +22,12 @@ const RecommendedDepositSection = () => {
             width={40}
             height={40}
           />
-          <h2 className="text-[#2d3436] text-4xl">
+          <h2 className="text-[#2d3436] text-2xl sm:text-4xl text-center">
             Métodos de Pagamento e Tempos de Processamento
           </h2>
           <p className="text-lg text-[#636e72]">Depósito Mínimo Recomendado</p>
 
-          <div className="py-8 flex items-center border-y border-[#dfe6e9] w-full">
+          <div className="py-8 flex items-center border-y border-[#dfe6e9] w-full xl:overflow-x-hidden overflow-x-scroll gap-10">
             {currencyData.map((item, index) => (
               <CurrencyCard key={index} title={item.title} text={item.text} />
             ))}
