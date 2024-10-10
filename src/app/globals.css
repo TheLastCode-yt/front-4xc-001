@@ -59,4 +59,23 @@ body {
   }
 }
 
-/* test */
+/* carousel */
+/* Animação para o movimento horizontal */
+@keyframes scroll {
+  0% {
+    transform: translateX(100%); /* Começa fora da tela pela direita */
+  }
+  100% {
+    transform: translateX(
+      -100%
+    ); /* Move completamente para fora pela esquerda */
+  }
+}
+
+/* Classe para o efeito de rolagem quando o carousel estiver ativo */
+.carousel-active {
+  /* overflow: hidden; */
+  white-space: nowrap;
+  animation: scroll 16s linear infinite;
+  -webkit-text-stroke: 1px #d9d9d9;
+}

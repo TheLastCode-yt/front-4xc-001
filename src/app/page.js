@@ -2,13 +2,15 @@ import Link from 'next/link';
 
 /* components */
 import Hero from '@/components/Hero';
-
-import TextReveal from '@/components/TextReveal';
 import InteractiveGallery from '@/components/InteractiveGallery';
 import ButtonOrLink from '@/components/ButtonOrLink';
 import AppSection from '@/components/AppSection';
 import InfiniteMovingLetters from '@/components/InfiniteMovingLetters';
 import TradingPlataform from '@/components/TradingPlataform';
+import TextReveal from '@/components/TextReveal';
+import PickAccountSection from '@/components/PickAccountSection';
+import AchievementsSection from '@/components/AchievementsSection';
+
 export default function Home() {
   const items = [
     {
@@ -71,6 +73,10 @@ export default function Home() {
       <TradingPlataform />
 
       <InteractiveGallery />
+
+      <PickAccountSection />
+
+      <AchievementsSection />
 
       <section className="text-black py-10">
         <div className="container mx-auto">
