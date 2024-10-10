@@ -6,16 +6,10 @@
   --custom__blue: #0051ff;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-  }
-}
-
 body {
   color: white;
   background-color: white;
-  /* font-family: var(--font-noto-sans); */
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {
@@ -55,6 +49,10 @@ body {
   }
 
   .divion-before {
+    transform: skew(8deg, 4deg) rotate(8deg) translate(-50%, 100%);
+  }
+
+  .divion-before-xl {
     transform: skew(-26deg, 11deg) rotate(-13deg) translate(-25px, -50%);
   }
 }

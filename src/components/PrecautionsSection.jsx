@@ -195,6 +195,7 @@ const CardDangers = ({ img, title, text }) => {
           width={25}
           src={`/icons/${img}.svg`}
           className="max-h-[25px] w-auto"
+          alt={img}
         />
         <h3 className="text-xl font-semibold">{title}</h3>
       </div>

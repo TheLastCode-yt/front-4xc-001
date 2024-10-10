@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 
-
 const DiscoverExchangeSection = () => {
   const cardData = [
     {
@@ -26,23 +25,23 @@ const DiscoverExchangeSection = () => {
         <div className="flex flex-col gap-y-10">
           {/* texts */}
           <div className="text-black max-w-md">
-            <h2 className="text-5xl font-semibold leading-[120%] ">
+            <h2 className="text-4xl md:text-5xl font-semibold leading-[120%] md:max-w-none max-w-[80%]">
               Descubra a vantagem da FxPro
             </h2>
             <p className="my-10 text-sm">Nosso método de execução PRO</p>
           </div>
 
           {/* cards */}
-          <div className="flex items-center justify-between gap-x-6">
+          <div className="flex items-center flex-col xl:flex-row xl:justify-between gap-x-6 xl:gap-y-0 gap-y-10">
             {cardData.map((card, index) => (
               <Card key={index} title={card.title} text={card.text} />
             ))}
           </div>
 
           {/* image */}
-          <div className="w-full grid grid-cols-[1fr_568px_1fr]">
+          <div className="w-full grid xl:grid-cols-[1fr_568px_1fr] grid-cols-6 gap-y-10">
             {/* cards 1 content */}
-            <div className="flex flex-col gap-y-8 justify-center text-black">
+            <div className="flex flex-col gap-y-8 justify-center text-black col-span-6 xl:col-auto">
               <article className="flex flex-col gap-y-8">
                 <h3 className="text-2xl font-semibold leading-[120%]">
                   Correspondência de pedidos eficiente
@@ -69,7 +68,7 @@ const DiscoverExchangeSection = () => {
             </div>
 
             {/* image */}
-            <div className="px-12">
+            <div className="px-12 xl:col-auto col-span-6">
               <Image
                 src="/images/advantages.webp"
                 width={1496}
@@ -79,7 +78,7 @@ const DiscoverExchangeSection = () => {
             </div>
 
             {/* cards 2 content */}
-            <div className="flex flex-col gap-y-8 justify-center text-black">
+            <div className="flex flex-col gap-y-8 justify-center text-black  xl:col-auto col-span-6">
               <article className="flex flex-col gap-y-8">
                 <h3 className="text-2xl font-semibold leading-[120%]">
                   Hedging Externo

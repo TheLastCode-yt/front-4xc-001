@@ -12,6 +12,8 @@ import HelpBottomSection from '@/components/HelpBottomSection';
 const page = () => {
   return (
     <main className="overflow-x-hidden pt-[64px] flex flex-col gap-y-28">
+      {/* py-4 px-2 md:p-10 xl:p-24 */}
+
       {/* section 1 */}
       <section className="">
         {/* min-h-[800px] */}
@@ -23,11 +25,14 @@ const page = () => {
         >
           <div className="container mx-auto h-full">
             <div className="w-full flex flex-col justify-center gap-y-4 h-full">
-              <TextReveal className={'text-8xl'} as="h2">
+              <TextReveal className={'text-6xl xl:text-8xl'} as="h2">
                 Execução NDD
               </TextReveal>
 
-              <TextReveal className={'text-3xl text-wrap max-w-xl'} as="p">
+              <TextReveal
+                className={'text-xl sm:text-2xl xl:text-3xl text-wrap max-w-xl'}
+                as="p"
+              >
                 Liquidez profunda, os melhores preços possíveis e execução
                 ultrarrápida e precisa. O que mais você poderia desejar?
               </TextReveal>
@@ -45,9 +50,9 @@ const page = () => {
       {/* section 4 */}
       <section>
         <div className="container mx-auto">
-          <div className="bg-custom__blue p-14 grid grid-cols-12 h-[254px]">
+          <div className="bg-custom__blue p-4 py-10 sm:p-14 grid grid-cols-6 md:grid-cols-12 sm:h-[254px] gap-10 items-center justify-center relative break-words">
             {/* img */}
-            <div className="relative flex items-center justify-center col-span-2">
+            <div className="relative flex items-center justify-center col-span-full md:col-span-3 xl:col-span-2">
               <Image
                 src="/icons/circle.svg"
                 width={154}
@@ -65,8 +70,8 @@ const page = () => {
             </div>
 
             {/* text */}
-            <div className="border-l pl-10 border-white h-full col-span-10 flex items-center">
-              <p>
+            <div className="md:border-l md:pl-10 border-white h-full col-span-full md:col-span-9 xl:col-span-12 flex items-center w-full relative">
+              <p className="w-full">
                 Nosso agregador spot interno e tecnologia avançada de
                 correspondência de ordens fornecem aos nossos traders acesso a
                 um pool de liquidez profundo e execução de negociações
@@ -88,10 +93,10 @@ const page = () => {
       {/* section 7 */}
       <section>
         <div className="container mx-auto bg-black">
-          <div className=" p-[100px] flex items-center justify-between">
+          <div className="py-10 px-2 xl:p-[100px] flex items-center justify-center  text-center  xl:text-left flex-col gap-y-20 xl:gap-y-0 xl:flex-row xl:justify-between xl:gap-x-20">
             {/* grid grid-cols-[auto_170px_auto] */}
             {/* text 1 */}
-            <div className="flex flex-col gap-y-8 max-w-lg">
+            <div className="flex flex-col gap-y-8 xl:max-w-lg w-full flex-1">
               <h2 className="text-2xl font-semibold">Negociação Ética</h2>
               <p className="text-sm leading-[170%]">
                 A FxPro defende a adoção de maior transparência e padrões éticos
@@ -101,10 +106,15 @@ const page = () => {
             </div>
 
             {/* division */}
-            <div className="relative before:w-[23px] before:h-[126px] before:bg-custom__blue before:absolute before:top-1/2 before:left-[51%] before:divion-before "></div>
+            {/* <div className="w-full h-[40px] relative  before:w-full before:h-[25px] xl:before:w-[23px] xl:before:h-[126px] before:bg-custom__blue before:absolute before:top-1/2 before:left-[51%] divion-before"></div> */}
+
+            <div className="relative hidden xl:block before:w-[23px] before:h-[126px] before:bg-custom__blue before:absolute before:top-1/2 before:left-[51%] before:divion-before-xl"></div>
+
+            {/* mobile division */}
+            <div className="relative h-[40px] w-full sm:w-[80%] sm:-rotate-[3deg] block xl:hidden before:w-full before:h-[25px] before:bg-custom__blue before:absolute before:top-1/2 sm:before:top-[80%] before:left-[51%] before:divion-before"></div>
 
             {/* text 2 */}
-            <div className="flex flex-col gap-y-8 max-w-lg">
+            <div className="flex flex-col gap-y-8 xl:max-w-lg flex-1">
               <h2 className="text-2xl font-semibold">Execução premiada</h2>
               <p className="text-sm leading-[170%]">
                 Nossa ampla gama de prêmios é uma prova clara de nossa execução

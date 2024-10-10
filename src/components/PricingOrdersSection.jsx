@@ -20,9 +20,9 @@ const PricingOrdersSection = () => {
   ];
   return (
     <section className="">
-      <div className="container mx-auto h-screen">
+      <div className="container mx-auto">
         <div className="flex flex-col gap-y-20 items-center justify-center">
-          <div className="flex items-center justify-between gap-10">
+          <div className="flex items-center flex-col xl:flex-row xl:justify-between gap-10">
             {cardData.map((card, index) => (
               <Card
                 key={index}
@@ -34,15 +34,15 @@ const PricingOrdersSection = () => {
           </div>
 
           <div className="w-fit relative">
-            <span className="text-black absolute -left-[12%] -top-[10%] font-medium">
+            <span className="text-black absolute -left-[12%] -top-[64%] xl:-top-[10%] font-medium">
               MAIS <br />
               DO QUE
             </span>
-            <p className="text-8xl relative text-center amount-orders__number">
+            <p className="text-6xl xl:text-8xl relative text-center amount-orders__number">
               635,000,000
             </p>
 
-            <span className="text-black absolute  -top-[50%] -right-[40%] font-medium">
+            <span className="text-black absolute  -right-[10%] xl:-top-[50%] xl:-right-[40%] font-medium">
               ORDENS EXECUTADAS <br /> ATÉ O MOMENTO POR 100.000 <br /> DE
               TRADERS
             </span>

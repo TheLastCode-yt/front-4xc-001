@@ -69,6 +69,7 @@ const OfficialSoftwareDownloadSection = () => {
                     width={135}
                     height={40}
                     className=""
+                    alt="apple store"
                   />
                 </Link>
 
@@ -78,6 +79,7 @@ const OfficialSoftwareDownloadSection = () => {
                     width={135}
                     height={40}
                     className=""
+                    alt="google play"
                   />
                 </Link>
               </div>

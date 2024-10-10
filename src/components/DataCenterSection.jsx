@@ -5,9 +5,9 @@ const DataCenterSection = () => {
   return (
     <section className="bg-[#E5E8ED]">
       <div className="container mx-auto">
-        <div className="flex items-center justify-between text-black">
+        <div className="flex items-center flex-col xl:flex-row xl:gap-y-0 gap-y-10 xl:justify-between text-black py-4 px-2">
           {/* text */}
-          <div className="max-w-sm flex flex-col gap-y-8 items-start justify-center">
+          <div className="xl:max-w-sm flex flex-col gap-y-10 items-start justify-center">
             <h2 className="text-2xl font-semibold leading-[120%]">
               Centro de Dados de ponta e agregador interno
             </h2>
@@ -29,7 +29,7 @@ const DataCenterSection = () => {
               alt="data center"
               height={2100}
               width={1350}
-              className="max-w-[800px] max-h-[500px]"
+              className="xl:max-w-[800px] xl:max-h-[500px]"
             />
           </div>
         </div>

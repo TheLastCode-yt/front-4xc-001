@@ -9,7 +9,6 @@ import HereHelpSection from '@/components/HereHelpSection';
 import HelpBottomSection from '@/components/HelpBottomSection';
 
 const page = () => {
-  /* py-4 px-2 md:p-10 xl:p-24*/
   return (
     <main className="overflow-x-hidden pt-[64px] flex flex-col gap-y-28">
       {/* section 1 */}
