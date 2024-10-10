@@ -107,9 +107,9 @@ const PrecautionsSection = () => {
     <section>
       <div className="container mx-auto text-black">
         <div className="flex flex-col gap-y-20">
-          <div className="grid grid-cols-12 p-24 bg-[#F4F4F4] text-4xl font-semibold gap-y-10 gap-x-12">
+          <div className="grid grid-cols-12 py-4 px-2 md:p-10 xl:p-24 bg-[#F4F4F4] text-4xl font-semibold gap-y-10 gap-x-12">
             {/* texts */}
-            <div className="col-span-6">
+            <div className="col-span-12 md:col-span-6">
               <h2>
                 Como a FxPro
                 <br />
@@ -125,13 +125,13 @@ const PrecautionsSection = () => {
               </p>
             </div>
 
-            <div className="col-span-12 max-w-sm text-lg">
+            <div className="col-span-12 max-w-sm text-lg ">
               Nesta página, você encontrará diretrizes e dicas para manter seus
               dados e finanças seguros e protegidos online.
             </div>
 
             {/* container for download pdfs */}
-            <div className="col-span-6 bg-white flex gap-x-8 p-8">
+            <div className="col-span-12 xl:col-span-6 bg-white flex gap-x-8 p-8">
               <CardDownloadPdf
                 img="fraudulent-websites-img"
                 link="/"
@@ -139,7 +139,7 @@ const PrecautionsSection = () => {
               />
             </div>
 
-            <div className="col-span-6 bg-white flex gap-x-8 p-8">
+            <div className="col-span-12 xl:col-span-6 bg-white flex gap-x-8 p-8">
               <CardDownloadPdf
                 img={'fraudulent-websites-protect'}
                 link="/"
@@ -148,7 +148,7 @@ const PrecautionsSection = () => {
             </div>
           </div>
 
-          <div className="">
+          <div className="overflow-hidden w-full">
             <ul className="grid grid-cols-12 gap-10">
               {dangersData.map((item, index) => (
                 <CardDangers key={index} {...item} />
@@ -163,21 +163,24 @@ const PrecautionsSection = () => {
 
 const CardDownloadPdf = ({ text, link, img }) => {
   return (
-    <Link href={link} className="col-span-6 bg-white flex gap-x-8 p-8">
+    <Link href={link} className=" bg-white flex gap-x-8 p-2 md:p-8">
       <Image
         src={`/icons/${img}.svg`}
         width={100}
         height={144}
         alt="image pdf"
       />
-      <div className="flex flex-col gap-y-3">
+
+      <div className="flex flex-col gap-y-3 max-w-[40%] sm:max-w-none">
         <Image
           src="/icons/pdf-doc-icon.svg"
           width={27}
           height={31}
           alt="icon pdf download"
         />
-        <span className="font-medium">{text}</span>
+        <p className="font-medium text-lg md:text-2xl xl:text-3xl block">
+          {text}
+        </p>
       </div>
     </Link>
   );
@@ -185,7 +188,7 @@ const CardDownloadPdf = ({ text, link, img }) => {
 
 const CardDangers = ({ img, title, text }) => {
   return (
-    <li className="pt-6 border-t border-[#D9D9D9] col-span-6 flex flex-col gap-y-3">
+    <li className="pt-6 border-t border-[#D9D9D9] col-span-12 md:col-span-6 flex flex-col gap-y-3 w-full">
       <div className="flex gap-x-2 items-center">
         <Image
           height={25}
@@ -195,8 +198,9 @@ const CardDangers = ({ img, title, text }) => {
         />
         <h3 className="text-xl font-semibold">{title}</h3>
       </div>
-      <div>
-        <p className="text-sm text-black">{text}</p>
+
+      <div className="">
+        <p className="text-sm text-black text-wrap">{text}</p>
       </div>
     </li>
   );

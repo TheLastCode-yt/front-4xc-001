@@ -22,13 +22,13 @@ const ReportFraudSection = () => {
 
   return (
     <section>
-      <div className="container mx-auto p-24 bg-[#130F0F] ">
-        <div className="grid grid-cols-12 text-4xl font-semibold gap-y-20">
-          <div className="col-span-6">
+      <div className="container mx-auto  py-4 px-2 md:p-10 xl:p-24 bg-[#130F0F]">
+        <div className="grid grid-cols-12 text-4xl font-semibold xl:gap-y-20 gap-y-10">
+          <div className="md:col-span-6 col-span-12">
             <h2>Software Oficial e Comunicação</h2>
           </div>
 
-          <div className="col-span-6 pl-6 border-l-4 border-black items-center flex">
+          <div className="col-span-12 md:col-span-6 pl-6 border-l-4 border-white items-center flex">
             <p className="text-sm">
               Lembramos que você deve ser cauteloso com canais de comunicação
               não autorizados e não divulgar quaisquer dados pessoais ou

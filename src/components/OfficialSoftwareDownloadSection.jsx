@@ -15,12 +15,12 @@ const OfficialSoftwareDownloadSection = () => {
     <section>
       <div className="container mx-auto text-black">
         <div className="flex flex-col gap-y-20">
-          <div className="grid grid-cols-12 text-4xl font-semibold gap-y-20">
-            <div className="col-span-6">
+          <div className="grid grid-cols-12 text-4xl font-semibold gap-y-10 xl:gap-y-20">
+            <div className="col-span-12 md:col-span-6">
               <h2>Software Oficial e Comunicação</h2>
             </div>
 
-            <div className="col-span-6 pl-6 border-l-4 border-white items-center flex">
+            <div className="col-span-12 md:col-span-6 pl-6 border-l-4 border-white items-center flex">
               <p className="text-sm">
                 Lembramos que você deve ser cauteloso com canais de comunicação
                 não autorizados e não divulgar quaisquer dados pessoais ou
@@ -30,8 +30,8 @@ const OfficialSoftwareDownloadSection = () => {
           </div>
 
           <div className="col-span-12">
-            <div className=" bg-[#F4F4F4] p-12 flex items-center justify-center w-full">
-              <ul className="flex items-center justify-between w-[80%]">
+            <div className=" bg-[#F4F4F4] p-6 md:p-10 xl:p-12 flex items-center justify-center w-full">
+              <ul className="flex items-center justify-between w-full xl:w-[80%]">
                 {socialsData.map((item, index) => (
                   <li key={index}>
                     <Link href={item.link}>
@@ -40,6 +40,7 @@ const OfficialSoftwareDownloadSection = () => {
                         width={40}
                         height={40}
                         alt={`${item.img} icon`}
+                        className="max-w-[30px] max-h-[30px] xl:max-w-none xl:max-h-none"
                       />
                     </Link>
                   </li>
@@ -48,9 +49,9 @@ const OfficialSoftwareDownloadSection = () => {
             </div>
           </div>
 
-          <div className="col-span-12 grid grid-cols-12">
+          <div className="col-span-12 grid grid-cols-12 gap-10 sm:gap-0">
             {/* grid 1 */}
-            <div className="flex flex-col gap-y-3 col-span-6 pr-10">
+            <div className="flex flex-col gap-y-3 md:col-span-6 md:pr-10 col-span-12">
               <p>
                 O aplicativo móvel oficial da FxPro está disponível para
                 download apenas na Apple App Store e na Google Play Store.
@@ -83,7 +84,7 @@ const OfficialSoftwareDownloadSection = () => {
             </div>
 
             {/* grid 2 */}
-            <div className="flex flex-col gap-y-3 col-span-6 pl-10">
+            <div className="flex flex-col gap-y-3 md:col-span-6 md:pl-10 col-span-12">
               <p>
                 Certifique-se de que está usando apenas aplicativos e softwares
                 de fontes oficiais. Se você tem suspeitas sobre um aplicativo ou

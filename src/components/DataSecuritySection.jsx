@@ -14,9 +14,9 @@ const DataSecuritySection = () => {
   return (
     <section>
       <div className="container mx-auto text-black">
-        <div className="grid grid-cols-12 p-24 bg-[#F4F4F4] text-4xl font-semibold gap-y-10">
+        <div className="grid grid-cols-12 py-4 px-2 md:p-10 xl:p-24 bg-[#F4F4F4] text-4xl font-semibold gap-y-10">
           {/* texts */}
-          <div className="col-span-6">
+          <div className="col-span-12 md:col-span-6">
             <h2>
               Como a FxPro
               <br />
@@ -24,7 +24,7 @@ const DataSecuritySection = () => {
             </h2>
           </div>
 
-          <div className="col-span-6 pl-6 border-l-4 border-black items-center flex">
+          <div className="col-span-12 md:col-span-6 pl-6 border-l-4 border-black items-center flex">
             <p className="text-sm">
               Na FxPro, a segurança dos dados do cliente é uma prioridade e
               temos medidas de segurança sofisticadas projetadas para proteger

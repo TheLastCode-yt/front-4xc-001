@@ -11,13 +11,13 @@ const SuspiciousContactSection = () => {
   return (
     <section>
       <div className="container mx-auto text-black">
-        <div className="grid grid-cols-12 p-24 bg-[#F4F4F4] text-4xl font-semibold gap-y-20">
+        <div className="grid grid-cols-12  py-4 px-2 md:p-10 xl:p-24 bg-[#F4F4F4] text-4xl font-semibold gap-y-10 xl:gap-y-20">
           {/* texts */}
-          <div className="col-span-6">
+          <div className="col-span-12 md:col-span-6">
             <h2>Contato suspeito alegando ser FxPro</h2>
           </div>
 
-          <div className="col-span-6 pl-6 border-l-4 border-black items-center flex">
+          <div className="col-span-12 md:col-span-6 pl-6 border-l-4 border-black items-center flex">
             <p className="text-sm">
               Para maior clareza, gostaríamos de destacar que o FxPro:
             </p>
