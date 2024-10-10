@@ -26,7 +26,7 @@ body {
 
 @layer base {
   .btn-common {
-    @apply text-lg relative inline-flex items-center justify-center rounded-lg transition-all duration-300 min-w-[230px] min-h-[70px] px-8 py-6;
+    @apply text-lg relative inline-flex items-center justify-center rounded-lg transition-all duration-300 min-w-[230px] min-h-[70px] max-h-[72px] px-8 py-6;
   }
 
   .btn {

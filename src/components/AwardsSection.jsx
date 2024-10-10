@@ -34,7 +34,7 @@ const AwardsSection = () => {
           <div className="w-full">
             <ul className="flex items-center justify-between">
               {awardsData.map((award, index) => (
-                <li key={index} className="flex-1 max-w-[25%]">
+                <li key={index} className="flex-1 max-w-[25%]" key={index}>
                   <AwardCard {...award} />
                 </li>
               ))}
