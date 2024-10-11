@@ -62,7 +62,7 @@ const MarqueeText = ({
     <div
       ref={containerRef}
       className={cn(
-        `relative flex z-10 flex-col gap-y-10 items-center justify-center cursor-pointer overflow-hidden ${containerHeight}`,
+        `relative flex z-10 flex-col gap-y-10 items-start justify-center cursor-pointer overflow-hidden ${containerHeight}`,
         className
       )}
       onMouseEnter={() => setIsHovering(true)}
@@ -94,8 +94,8 @@ const MarqueeText = ({
         <p className="text-xl">{subtitle}</p>
       </div>
 
-      <div className="w-full">
-        <p className="text-sm">{text}</p>
+      <div className="w-full max-w-[240px]">
+        <p className="text-sm ">{text}</p>
       </div>
     </div>
   );
@@ -109,45 +109,50 @@ const AchievementsSection = () => {
       text: 'FxPro has been providing online trading services to clients since 2002 and it currently serves 173 countries worldwide.',
       carouselText: 'client accounts',
       containerHeight: 'h-[460px]',
-      className: 'w-[570px] pl-[135px]',
+      className: 'w-[570px] pl-[135px] mt-[50px]',
     },
     {
       title: '112+',
       subtitle: 'Awards',
       text: 'FxPro has received constant recognition in the industry, winning over 112 international awards to date for the quality of its services.',
       carouselText: 'Awards',
-      containerHeight: 'h-[400px]',
-      className: 'bg-blue-500',
+      containerHeight: 'h-[460px]',
+      className: 'w-[430px] -ml-[160px] mt-[150px] pl-[30px]',
     },
     {
       title: '5-star',
       subtitle: 'customer service',
       text: 'Our dedicated, multilingual customer service team works 24/5 to provide you with an exceptional level of support.',
       carouselText: 'customer service',
-      containerHeight: 'h-[350px]',
-      className: 'bg-green-500',
+      containerHeight: 'h-[460px]',
+      className: 'w-[400px] pl-[30px] -ml-[125px]',
     },
     {
       title: '5',
       subtitle: 'industry regulations',
       text: 'FxPro is well-known throughout the industry as a trustworthy and reliable broker. We are regulated by the FCA, CySEC, FSCA and SCB.',
       carouselText: 'industry regulations',
-      containerHeight: 'h-[500px]',
-      className: 'bg-yellow-500',
+      containerHeight: 'h-[460px]',
+      className: 'pl-[30px] w-[480px] -ml-[100px] mt-[80px]',
     },
   ];
 
   return (
     <section>
-      <div className="container mx-auto bg-purple-500 h-screen">
-        <MarqueeText
-          title={achievementsData[0].title}
-          subtitle={achievementsData[0].subtitle}
-          text={achievementsData[0].text}
-          carouselText={achievementsData[0].carouselText}
-          containerHeight={achievementsData[0].containerHeight}
-          className={achievementsData[0].className}
-        />
+      <div className="container mx-auto ">
+        <div className="relative flex">
+          {achievementsData.map((achievement, index) => (
+            <MarqueeText
+              key={index}
+              title={achievement.title}
+              subtitle={achievement.subtitle}
+              text={achievement.text}
+              carouselText={achievement.carouselText}
+              containerHeight={achievement.containerHeight}
+              className={achievement.className}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

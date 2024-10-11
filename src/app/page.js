@@ -1,16 +1,15 @@
 import Link from 'next/link';
-
 /* components */
 import Hero from '@/components/Hero';
 import InteractiveGallery from '@/components/InteractiveGallery';
 import ButtonOrLink from '@/components/ButtonOrLink';
 import AppSection from '@/components/AppSection';
-import InfiniteMovingLetters from '@/components/InfiniteMovingLetters';
 import TradingPlataform from '@/components/TradingPlataform';
-import TextReveal from '@/components/TextReveal';
 import PickAccountSection from '@/components/PickAccountSection';
 import AchievementsSection from '@/components/AchievementsSection';
 
+import InfiniteMovingLetters from '@/components/InfiniteMovingLetters';
+import TextReveal from '@/components/TextReveal';
 export default function Home() {
   const items = [
     {
@@ -46,8 +45,8 @@ export default function Home() {
           <div className="px-[70px] py-[50px] flex items-center justify-between">
             <div className="flex-1">
               <h1 className="text-5xl">
-                Forex, Índices, Ações e mais com a Trader 4xc - corretora online n.º
-                1
+                Forex, Índices, Ações e mais com a Trader 4xc - corretora online
+                n.º 1
               </h1>
             </div>
 
@@ -139,17 +138,27 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Animação da esquerda para a direita */}
-      {/* <TextReveal color="lightblue" direction="left" duration={1}>
-        Texto Revelado da Esquerda
-      </TextReveal> */}
-      {/* Animação da direita para a esquerda */}
-      {/* <TextReveal color="lightgreen" direction="right" duration={1}>
-        Texto Revelado da Direita
-      </TextReveal> */}
-
-      {/* <div className="w-full h-[200vw] bg-custom__blue"></div> */}
     </main>
   );
+}
+
+{
+  /* Animação da esquerda para a direita */
+}
+{
+  /* <TextReveal color="lightblue" direction="left" duration={1}>
+        Texto Revelado da Esquerda
+      </TextReveal> */
+}
+{
+  /* Animação da direita para a esquerda */
+}
+{
+  /* <TextReveal color="lightgreen" direction="right" duration={1}>
+        Texto Revelado da Direita
+      </TextReveal> */
+}
+
+{
+  /* <div className="w-full h-[200vw] bg-custom__blue"></div> */
 }
