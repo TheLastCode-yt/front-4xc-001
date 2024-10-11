@@ -38,6 +38,7 @@ const WhyOpenAccountSection = () => {
       text: 'Suporte ao cliente dedicado 24 horas por dia, 5 dias por semanas',
     },
   ];
+
   return (
     <section>
       <div className="container mx-auto">
@@ -45,10 +46,10 @@ const WhyOpenAccountSection = () => {
           <div>
             <ul className="flex items-center justify-between flex-wrap gap-y-10 gap-x-4 w-full">
               {cardsData.map((item, index) => (
-                <li className="xl:flex-1">
+                <li className="xl:flex-1" key={`${index}+${item.title}`}>
                   <Link
                     href={item.href}
-                    key={index}
+                    key={`${index}+${item.title}`}
                     className="flex flex-col items-center gap-y-6 group hover:bg-[#303135] border border-[#3031351a] transition-all duration-300 xl:h-[310px] py-12 px-8 text-center"
                   >
                     <Image
@@ -110,10 +111,10 @@ const WhyOpenAccountSection = () => {
           </div>
 
           {/* section 3 */}
-          <div className=" items-center relative hidden xl:flex">
+          <ul className=" items-center relative hidden xl:flex">
             {textsData.map((text, index) => (
-              <div
-                key={index}
+              <li
+                key={`${index}+banana+${text.title}`}
                 className={`flex-1 flex items-start justify-center flex-col gap-y-6 border-[#a79582] py-2 px-4 min-h-[200px]
                   ${index === 0 && 'border-l'} 
                   ${index === textsData.length - 1 && 'border-r'}
@@ -122,19 +123,22 @@ const WhyOpenAccountSection = () => {
               >
                 <TextItem iconSrc="/icons/correct.svg" title={text.title} />
                 <TextItem iconSrc="/icons/correct.svg" text={text.text} />
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
 
           {/* section 3 mobile */}
-          <div className="xl:hidden flex flex-col gap-y-10">
+          <ul className="xl:hidden flex flex-col gap-y-10">
             {textsData.map((text, index) => (
-              <div key={index} className="flex flex-col gap-y-10">
+              <li
+                key={`${index}+soupSection3Mobile`}
+                className="flex flex-col gap-y-10"
+              >
                 <TextItem iconSrc="/icons/correct.svg" title={text.title} />
                 <TextItem iconSrc="/icons/correct.svg" text={text.text} />
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </div>
     </section>
