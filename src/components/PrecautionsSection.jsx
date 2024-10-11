@@ -107,9 +107,9 @@ const PrecautionsSection = () => {
     <section>
       <div className="container mx-auto text-black">
         <div className="flex flex-col gap-y-20">
-          <div className="grid grid-cols-12 py-4 px-2 md:p-10 xl:p-24 bg-[#F4F4F4] text-4xl font-semibold gap-y-10 gap-x-12">
+          <div className="grid grid-cols-6 xl:grid-cols-12 py-4 px-2 md:p-10 xl:p-24 bg-[#F4F4F4] text-4xl font-semibold gap-y-10 gap-x-12">
             {/* texts */}
-            <div className="col-span-12 md:col-span-6">
+            <div className="col-span-6 md:col-span-6">
               <h2>
                 Como a Trader 4xc
                 <br />
@@ -117,21 +117,21 @@ const PrecautionsSection = () => {
               </h2>
             </div>
 
-            <div className="col-span-6 pl-6 border-l-4 border-black items-center flex">
+            <div className="col-span-6 pl-6 border-l-4 border-black items-center flex w-full">
               <p className="text-sm">
-                Na Trader 4xc, a segurança dos dados do cliente é uma prioridade e
-                temos medidas de segurança sofisticadas projetadas para proteger
-                suas informações pessoais, privacidade e fundos.
+                Na Trader 4xc, a segurança dos dados do cliente é uma prioridade
+                e temos medidas de segurança sofisticadas projetadas para
+                proteger suas informações pessoais, privacidade e fundos.
               </p>
             </div>
 
-            <div className="col-span-12 max-w-sm text-lg ">
+            <div className="col-span-6 xl:col-span-12 max-w-sm text-lg ">
               Nesta página, você encontrará diretrizes e dicas para manter seus
               dados e finanças seguros e protegidos online.
             </div>
 
             {/* container for download pdfs */}
-            <div className="col-span-12 xl:col-span-6 bg-white flex gap-x-8 p-8">
+            <div className="col-span-6  bg-white flex gap-x-8 p-8 w-full">
               <CardDownloadPdf
                 img="fraudulent-websites-img"
                 link="/"
@@ -139,7 +139,7 @@ const PrecautionsSection = () => {
               />
             </div>
 
-            <div className="col-span-12 xl:col-span-6 bg-white flex gap-x-8 p-8">
+            <div className="col-span-6 bg-white flex gap-x-8 p-8">
               <CardDownloadPdf
                 img={'fraudulent-websites-protect'}
                 link="/"
@@ -149,7 +149,7 @@ const PrecautionsSection = () => {
           </div>
 
           <div className="overflow-hidden w-full">
-            <ul className="grid grid-cols-12 gap-10">
+            <ul className="grid grid-cols-6 gap-10">
               {dangersData.map((item, index) => (
                 <CardDangers key={index} {...item} />
               ))}
@@ -188,7 +188,7 @@ const CardDownloadPdf = ({ text, link, img }) => {
 
 const CardDangers = ({ img, title, text }) => {
   return (
-    <li className="pt-6 border-t border-[#D9D9D9] col-span-12 md:col-span-6 flex flex-col gap-y-3 w-full">
+    <li className="pt-6 border-t border-[#D9D9D9] col-span-6 md:col-span-3 flex flex-col gap-y-3 w-full">
       <div className="flex gap-x-2 items-center">
         <Image
           height={25}

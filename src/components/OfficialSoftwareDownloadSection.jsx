@@ -20,7 +20,7 @@ const OfficialSoftwareDownloadSection = () => {
               <h2>Software Oficial e Comunicação</h2>
             </div>
 
-            <div className="col-span-12 md:col-span-6 pl-6 border-l-4 border-white items-center flex">
+            <div className="col-span-12 md:col-span-6 pl-6 border-l-4 border-black items-center flex">
               <p className="text-sm">
                 Lembramos que você deve ser cauteloso com canais de comunicação
                 não autorizados e não divulgar quaisquer dados pessoais ou
@@ -49,9 +49,9 @@ const OfficialSoftwareDownloadSection = () => {
             </div>
           </div>
 
-          <div className="col-span-12 grid grid-cols-12 gap-10 sm:gap-0">
+          <div className="col-span-12 grid grid-cols-6 gap-10 sm:gap-0">
             {/* grid 1 */}
-            <div className="flex flex-col gap-y-3 md:col-span-6 md:pr-10 col-span-12">
+            <div className="flex flex-col gap-y-3  md:pr-10 col-span-6 md:col-span-3">
               <p>
                 O aplicativo móvel oficial da Trader 4xc está disponível para
                 download apenas na Apple App Store e na Google Play Store.
@@ -86,7 +86,7 @@ const OfficialSoftwareDownloadSection = () => {
             </div>
 
             {/* grid 2 */}
-            <div className="flex flex-col gap-y-3 md:col-span-6 md:pl-10 col-span-12">
+            <div className="flex flex-col gap-y-3  md:pl-10 col-span-6 md:col-span-3">
               <p>
                 Certifique-se de que está usando apenas aplicativos e softwares
                 de fontes oficiais. Se você tem suspeitas sobre um aplicativo ou
