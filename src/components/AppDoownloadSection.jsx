@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const AppDoownloadSection = () => {
   return (
-    <section>
+    <section className="">
       <div className="container mx-auto">
         <div className="flex items-center justify-center relative flex-col xl:flex-row gap-y-10">
           {/* image gif */}
@@ -18,7 +18,7 @@ const AppDoownloadSection = () => {
           </div>
 
           {/* texts */}
-          <div className="flex-1  min-h-[600px]">
+          <div className="flex-1  xl:min-h-[600px]">
             <div className="flex flex-col items-start gap-y-10 xl:w-[60%] w-full">
               <h2 className="text-[#2d3436] text-2xl md:text-3xl">
                 Registre-se e negocie em qualquer lugar, com o aplicativo FxPro

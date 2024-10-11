@@ -2,17 +2,16 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 /* components */
-import GoogleButton from './layout/GoogleButton';
-import AppleButton from './layout/AppleButton';
+import TextReveal from './TextReveal';
 
 const AppSection = () => {
   return (
-    <section className="relative ">
-      <div className="w-full h-full absolute top-0 right-[165px] bg-black -z-10 mr-[165px]" />
+    <section className="relative py-[100px]">
+      <div className="w-full h-full absolute top-0 right-[160px] bg-black -z-10 mr-[100px]" />
 
-      <div className="container mx-auto  flex items-center justify-center min-h-[860px]">
-        <div className="w-full flex items-center justify-start">
-          <div className="flex flex-col gap-y-6">
+      <div className="container mx-auto z-10">
+        <div className="w-full grid  grid-cols-[135px_auto_370px] items-center justify-start gap-20 ">
+          <div className="flex flex-col gap-y-6 ">
             {/* apple btn */}
             <Link href={'/'} className="bg-white rounded w-fit">
               <Image
@@ -44,19 +43,21 @@ const AppSection = () => {
           </div>
 
           {/* image */}
-          <div>
+          <div className=" ">
             <Image
               src="/images/trade-on-mobile.webp"
               alt="trader app mobile"
-              width={337}
-              height={523}
+              width={400}
+              height={619}
               className="w-auto max-h-[620px]"
             />
           </div>
 
           {/* text */}
           <div className="flex items-start flex-col gap-y-6">
-            <h2>Negocie em dispositivos móveis</h2>
+            <TextReveal as="h2" className={'text-4xl'} duration={2}>
+              Negocie em dispositivos móveis
+            </TextReveal>
 
             <p>
               Negocie no mercados de CFDs de onde estiver com o nosso aplicativo
@@ -97,7 +98,7 @@ const AppSection = () => {
               {/* downloads */}
               <div className="flex gap-x-2">
                 <span className="text-3xl font-bold">15M</span>
-                <div>
+                <div className="text-sm">
                   <span>
                     mais de 15 milhões de <br /> downloads
                   </span>

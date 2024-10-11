@@ -49,7 +49,7 @@ const Footer = () => {
               href="#"
               rel="noreferrer"
               target="_blank"
-              className="text-gray-700 transition hover:text-gray-700/75"
+              className="text-black transition hover:text-custom__blue"
             >
               <span className="sr-only">Facebook</span>
               <svg
@@ -72,7 +72,7 @@ const Footer = () => {
               href="#"
               rel="noreferrer"
               target="_blank"
-              className="text-gray-700 transition hover:text-gray-700/75"
+              className="text-black transition hover:text-custom__blue"
             >
               <span className="sr-only">Instagram</span>
               <svg
@@ -95,7 +95,7 @@ const Footer = () => {
               href="#"
               rel="noreferrer"
               target="_blank"
-              className="text-gray-700 transition hover:text-gray-700/75"
+              className="text-black transition hover:text-custom__blue"
             >
               <span className="sr-only">Twitter</span>
               <svg

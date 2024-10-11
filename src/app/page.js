@@ -38,8 +38,9 @@ export default function Home() {
   ];
 
   return (
-    <main className="overflow-x-hidden pt-[64px] flex flex-col gap-y-28">
+    <main className="overflow-x-hidden pt-[64px] flex flex-col gap-y-20">
       <Hero />
+
       <section className="w-full">
         <div className="container mx-auto bg-custom__blue">
           <div className="px-[70px] py-[50px] flex items-center justify-between">
@@ -59,13 +60,13 @@ export default function Home() {
         </div>
       </section>
 
+      <PickAccountSection />
+
       <AppSection />
 
       <TradingPlataform />
 
       <InteractiveGallery />
-
-      <PickAccountSection />
 
       <AchievementsSection />
 

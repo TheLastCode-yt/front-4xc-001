@@ -13,7 +13,7 @@ const FeatureCardSection = () => {
     { text: 'Calendário econômico', icon: 'calendar', href: '/' },
   ];
   return (
-    <section>
+    <section className="">
       <div className="container mx-auto">
         <div className="flex items-center justify-center xl:gap-x-20 xl:flex-row flex-col gap-y-10">
           {cardData.map((item, index) => (
