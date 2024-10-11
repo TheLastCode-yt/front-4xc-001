@@ -70,7 +70,7 @@ const page = () => {
             </div>
 
             {/* text */}
-            <div className="md:border-l md:pl-10 border-white h-full col-span-full md:col-span-9 xl:col-span-12 flex items-center w-full relative">
+            <div className="md:border-l md:pl-10 border-white h-full col-span-full md:col-span-9 xl:col-span-10 flex items-center w-full relative">
               <p className="w-full">
                 Nosso agregador spot interno e tecnologia avançada de
                 correspondência de ordens fornecem aos nossos traders acesso a
@@ -99,9 +99,9 @@ const page = () => {
             <div className="flex flex-col gap-y-8 xl:max-w-lg w-full flex-1">
               <h2 className="text-2xl font-semibold">Negociação Ética</h2>
               <p className="text-sm leading-[170%]">
-                A Trader 4xc defende a adoção de maior transparência e padrões éticos
-                dentro do setor de trading online. Sem manipulação, sem caça de
-                stop loss, sem preocupações!
+                A Trader 4xc defende a adoção de maior transparência e padrões
+                éticos dentro do setor de trading online. Sem manipulação, sem
+                caça de stop loss, sem preocupações!
               </p>
             </div>
 
@@ -130,8 +130,8 @@ const page = () => {
       <section>
         <div className="container mx-auto flex flex-col gap-y-12 text-black items-center justify-center">
           <p className="max-w-xl text-5xl leading-[120%] text-center">
-            Desbloqueie o poder da <strong>execução NDD</strong> com a Trader 4xc
-            hoje mesmo!
+            Desbloqueie o poder da <strong>execução NDD</strong> com a Trader
+            4xc hoje mesmo!
           </p>
 
           <Link

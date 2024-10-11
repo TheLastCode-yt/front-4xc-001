@@ -1,10 +1,11 @@
 import Link from 'next/link';
+import TextReveal from './TextReveal';
 const ReportFraudSection = () => {
   const textsData = [
     <>
       Se você receber chamadas, e-mails ou SMS não solicitados alegando ser
-      Trader 4xc, não se envolva em nenhuma comunicação e informe-nos imediatamente
-      por meio de nossos{' '}
+      Trader 4xc, não se envolva em nenhuma comunicação e informe-nos
+      imediatamente por meio de nossos{' '}
       <Link href={'/'} className="underline">
         canais de comunicação oficiais
       </Link>{' '}
@@ -25,7 +26,10 @@ const ReportFraudSection = () => {
       <div className="container mx-auto  py-4 px-2 md:p-10 xl:p-24 bg-[#130F0F]">
         <div className="grid grid-cols-12 text-4xl font-semibold xl:gap-y-20 gap-y-10">
           <div className="md:col-span-6 col-span-12">
-            <h2>Software Oficial e Comunicação</h2>
+            {/* <h2>Software Oficial e Comunicação</h2> */}
+            <TextReveal as="h2" duration={2}>
+              Software Oficial e Comunicação
+            </TextReveal>
           </div>
 
           <div className="col-span-12 md:col-span-6 pl-6 border-l-4 border-white items-center flex">

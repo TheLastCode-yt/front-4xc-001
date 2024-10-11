@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-
+import TextReveal from './TextReveal';
 const OfficialSoftwareDownloadSection = () => {
   const socialsData = [
     { link: '/', img: 'facebook-logo' },
@@ -17,7 +17,10 @@ const OfficialSoftwareDownloadSection = () => {
         <div className="flex flex-col gap-y-20">
           <div className="grid grid-cols-12 text-4xl font-semibold gap-y-10 xl:gap-y-20">
             <div className="col-span-12 md:col-span-6">
-              <h2>Software Oficial e Comunicação</h2>
+              {/* <h2>Software Oficial e Comunicação</h2> */}
+              <TextReveal as="h2" duration={2}>
+                Software Oficial e Comunicação
+              </TextReveal>
             </div>
 
             <div className="col-span-12 md:col-span-6 pl-6 border-l-4 border-black items-center flex">
@@ -76,7 +79,7 @@ const OfficialSoftwareDownloadSection = () => {
                 <Link href={'/'}>
                   <Image
                     src="/icons/google-button.svg"
-                    width={135} 
+                    width={135}
                     height={40}
                     className=""
                     alt="google play"

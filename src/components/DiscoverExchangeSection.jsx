@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import TextReveal from './TextReveal';
 
 const DiscoverExchangeSection = () => {
   const cardData = [
@@ -24,10 +25,13 @@ const DiscoverExchangeSection = () => {
       <div className="container mx-auto">
         <div className="flex flex-col gap-y-10">
           {/* texts */}
-          <div className="text-black max-w-md">
-            <h2 className="text-4xl md:text-5xl font-semibold leading-[120%] md:max-w-none max-w-[80%]">
+          <div className="text-black xl:max-w-md">
+            <TextReveal
+              as="h2"
+              className="text-4xl md:text-5xl font-semibold leading-[120%] md:max-w-none max-w-[80%]"
+            >
               Descubra a vantagem da Trader 4xc
-            </h2>
+            </TextReveal>
             <p className="my-10 text-sm">Nosso método de execução PRO</p>
           </div>
 

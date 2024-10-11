@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { cn } from '@/lib/utils';
+import TextReveal from './TextReveal';
 const HereHelpSection = () => {
   const helpData = [
     {
@@ -39,9 +40,12 @@ const HereHelpSection = () => {
         <div className="flex flex-col gap-y-20">
           <div className="grid grid-cols-12 text-4xl font-semibold gap-y-20 bg-[#F4F4F4] text-black  py-4 px-2 md:p-10 xl:p-24">
             <div className="col-span-12 md:col-span-6">
-              <h2>
+              {/* <h2>
                 Estamos aqui <br /> para ajudar!
-              </h2>
+              </h2> */}
+              <TextReveal as="h2" duration={2}>
+                Estamos aqui <br /> para ajudar!
+              </TextReveal>
             </div>
 
             <div className="col-span-12 md:col-span-6 pl-6 border-l-4 border-black items-center flex flex-col gap-y-4">

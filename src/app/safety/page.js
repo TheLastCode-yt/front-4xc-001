@@ -7,17 +7,28 @@ import ReportFraudSection from '@/components/ReportFraudSection';
 import OfficialSoftwareDownloadSection from '@/components/OfficialSoftwareDownloadSection';
 import HereHelpSection from '@/components/HereHelpSection';
 import HelpBottomSection from '@/components/HelpBottomSection';
+import TextReveal from '@/components/TextReveal';
 
 const page = () => {
   return (
-    <main className="overflow-x-hidden pt-[64px] flex flex-col gap-y-28">
+    <main className="overflow-x-hidden pt-[64px] xl:pt-[100px] flex flex-col gap-y-28">
       {/* section 1 */}
       <section>
         <div className="container mx-auto text-black">
-          <h1 className="text-5xl font-semibold">Mantendo-se seguro on-line</h1>
-          <span className="text-2xl font-semibold">
-            Informações importantes sobre segurança online
-          </span>
+          <div className="flex flex-col gap-y-3">
+            <TextReveal as="h1" className="text-5xl font-semibold">
+              Mantendo-se seguro on-line
+            </TextReveal>
+
+            <TextReveal
+              as="span"
+              className="text-2xl font-semibold w-fit"
+              duration={2}
+              direction="right"
+            >
+              Informações importantes sobre segurança online
+            </TextReveal>
+          </div>
         </div>
       </section>
 

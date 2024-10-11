@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import TextReveal from './TextReveal';
 const DataSecuritySection = () => {
   const itemsData = [
     'Usamos os mais altos níveis de criptografia de dados em nossos sites e aplicativos',
@@ -17,11 +18,15 @@ const DataSecuritySection = () => {
         <div className="grid grid-cols-12 py-4 px-2 md:p-10 xl:p-24 bg-[#F4F4F4] text-4xl font-semibold gap-y-10">
           {/* texts */}
           <div className="col-span-12 md:col-span-6">
-            <h2>
+            <TextReveal
+              className="col-span-12 md:col-span-6"
+              as="h2"
+              duration={2}
+            >
               Como a Trader 4xc
               <br />
               protege seus dados
-            </h2>
+            </TextReveal>
           </div>
 
           <div className="col-span-12 md:col-span-6 pl-6 border-l-4 border-black items-center flex">
@@ -35,18 +40,18 @@ const DataSecuritySection = () => {
           {/* items */}
           <div className="col-span-12 grid grid-cols-1 md:grid-cols-12 gap-10">
             {/* Primeira coluna */}
-            <div className="flex flex-col gap-6 col-span-6">
+            <ul className="flex flex-col gap-6 col-span-6">
               {itemsData.slice(0, 4).map((item, index) => (
                 <ItemText text={item} key={index} />
               ))}
-            </div>
+            </ul>
 
             {/* Segunda coluna */}
-            <div className="flex flex-col gap-6 col-span-6">
+            <ul className="flex flex-col gap-6 col-span-6">
               {itemsData.slice(4).map((item, index) => (
-                <ItemText text={item} key={index} />
+                <ItemText text={item} key={`${index}+xambra?`} />
               ))}
-            </div>
+            </ul>
           </div>
         </div>
       </div>
@@ -56,7 +61,7 @@ const DataSecuritySection = () => {
 
 const ItemText = ({ text }) => {
   return (
-    <div className="flex items-start gap-x-2 text-lg">
+    <li className="flex items-start gap-x-2 text-lg">
       <Image
         src="/icons/check-green.svg"
         width={20}
@@ -64,7 +69,7 @@ const ItemText = ({ text }) => {
         alt="arrow icon"
       />
       {text}
-    </div>
+    </li>
   );
 };
 
