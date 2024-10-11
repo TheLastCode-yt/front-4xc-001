@@ -12,8 +12,7 @@ import HelpBottomSection from '@/components/HelpBottomSection';
 import ServicesSection from '@/components/ServicesSection';
 const page = () => {
   return (
-    <main className="overflow-x-hidden pt-[64px] flex flex-col gap-y-28">
-      {/* py-4 px-2 md:p-10 xl:p-24 */}
+    <main className="overflow-x-hidden pt-[64px] xl:pt-[100px] flex flex-col gap-y-28">
       {/* section 1 */}
       <section>
         <div className="container mx-auto text-center flex flex-col gap-y-6 items-center justify-center">
@@ -69,9 +68,9 @@ const page = () => {
         <div className="container mx-auto flex items-center justify-center">
           <div className="w-full xl:w-[66.6%] 2xl:w-[50%]">
             <p className="text-center max- text-[#2d3436] text-xl sm:text-2xl">
-              Desde a nossa criação, a Trader 4xc expandiu-se com sucesso para servir
-              clientes de varejo e institucionais em mais de 170 países - e
-              continuamos a crescer.
+              Desde a nossa criação, a Trader 4xc expandiu-se com sucesso para
+              servir clientes de varejo e institucionais em mais de 170 países -
+              e continuamos a crescer.
             </p>
           </div>
         </div>

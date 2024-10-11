@@ -38,7 +38,9 @@ const AppSection = () => {
                 width={16}
                 height={26}
               />
-              <span>Escaneie para baixar o aplicativo de negociação Trader 4xc</span>
+              <span>
+                Escaneie para baixar o aplicativo de negociação Trader 4xc
+              </span>
             </div>
           </div>
 
@@ -69,8 +71,8 @@ const AppSection = () => {
               Disponível em{' '}
               <Link href="/" target="_blank" className="onelink onelink-ios">
                 iOS
-              </Link>
-              e
+              </Link>{' '}
+              e{' '}
               <Link
                 href="/"
                 target="_blank"

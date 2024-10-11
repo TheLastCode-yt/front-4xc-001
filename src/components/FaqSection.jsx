@@ -1,4 +1,7 @@
+'use client';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
+import { slideUp } from '@/animations/slideVariants';
 const FaqSection = () => {
   const faqData = [
     {
@@ -31,7 +34,16 @@ const FaqSection = () => {
     <section>
       <div className="container mx-auto">
         <div className="flex flex-col gap-y-10 items-center justify-center">
-          <h2 className="text-[#2d3436] text-4xl">Perguntas frequentes</h2>
+          <motion.h2
+            initial="hidden"
+            whileInView="visible"
+            variants={slideUp}
+            viewport={{ once: true }}
+            className="text-[#2d3436] text-4xl"
+          >
+            Perguntas frequentes
+          </motion.h2>
+
           <div className="grid grid-cols-6 gap-6 xl:gap-10">
             {faqData.map((item, index) => (
               <Link

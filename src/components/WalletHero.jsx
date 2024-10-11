@@ -4,7 +4,7 @@ import Link from 'next/link';
 const WalletHero = () => {
   return (
     <section className="py-10">
-      <div className="mx-auto container relative overflow-hidden min-h-[60vh] flex flex-col gap-y-10">
+      <div className="mx-auto container relative overflow-hidden min-h-[80vh] flex flex-col gap-y-10">
         <div className="w-full h-fit xl:hidden">
           <Image
             src="/images/key.webp"
@@ -16,7 +16,7 @@ const WalletHero = () => {
         </div>
 
         <div className="xl:max-w-[40%] xl:absolute left-[10%]">
-          <h1 className="text-[#2d3436] text-4xl xl:text-5xl xl:leading-[1.22] 2xl:leading-[1.3] font-medium">
+          <h1 className="text-[#2d3436] text-4xl 2xl:text-5xl xl:leading-[1.22] 2xl:leading-[1.3] font-medium">
             Financie através da Carteira Trader 4xc -
             <small>
               uma ferramenta inovadora de gestão de dinheiro e risco
@@ -26,10 +26,10 @@ const WalletHero = () => {
 
         <div className="flex flex-col gap-y-10 xl:max-w-[40%] xl:absolute bottom-0 left-[10%]">
           <p className="text-[#636e72]">
-            A Trader 4xc tornou o depósito e a retirada de fundos ainda mais fáceis
-            com a Carteira Trader 4xc. Agora você pode transferir fundos entre sua
-            carteira Trader 4xc e contas de negociação a qualquer momento que
-            desejar.
+            A Trader 4xc tornou o depósito e a retirada de fundos ainda mais
+            fáceis com a Carteira Trader 4xc. Agora você pode transferir fundos
+            entre sua carteira Trader 4xc e contas de negociação a qualquer
+            momento que desejar.
           </p>
 
           <Link

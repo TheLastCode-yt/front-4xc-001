@@ -8,8 +8,6 @@ import TradingPlataform from '@/components/TradingPlataform';
 import PickAccountSection from '@/components/PickAccountSection';
 import AchievementsSection from '@/components/AchievementsSection';
 
-import InfiniteMovingLetters from '@/components/InfiniteMovingLetters';
-import TextReveal from '@/components/TextReveal';
 export default function Home() {
   const items = [
     {
@@ -140,25 +138,4 @@ export default function Home() {
       </section>
     </main>
   );
-}
-
-{
-  /* Animação da esquerda para a direita */
-}
-{
-  /* <TextReveal color="lightblue" direction="left" duration={1}>
-        Texto Revelado da Esquerda
-      </TextReveal> */
-}
-{
-  /* Animação da direita para a esquerda */
-}
-{
-  /* <TextReveal color="lightgreen" direction="right" duration={1}>
-        Texto Revelado da Direita
-      </TextReveal> */
-}
-
-{
-  /* <div className="w-full h-[200vw] bg-custom__blue"></div> */
 }

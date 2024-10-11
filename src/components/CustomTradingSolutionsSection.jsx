@@ -1,5 +1,9 @@
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
+/* variants */
+import { slideUp } from '@/animations/slideVariants';
 
 const CustomTradingSolutionsSection = () => {
   const solutionsData = [
@@ -31,9 +35,15 @@ const CustomTradingSolutionsSection = () => {
     <section>
       <div className="container mx-auto">
         <div className="flex flex-col gap-y-10 items-center justify-center text-center">
-          <h2 className="text-[#2d3436] text-3xl sm:text-4xl">
+          <motion.h2
+            initial="hidden"
+            whileInView="visible"
+            variants={slideUp}
+            viewport={{ once: true }}
+            className="text-[#2d3436] text-3xl sm:text-4xl"
+          >
             Soluções de negociação sob medida
-          </h2>
+          </motion.h2>
 
           <div className="flex items-start  flex-col gap-y-10 xl:flex-row xl:justify-between xl:gap-x-20 2xl:gap-x-36 relative h-full px-2">
             {solutionsData.map((item, index) => (
@@ -41,9 +51,15 @@ const CustomTradingSolutionsSection = () => {
                 className=" flex flex-col items-center gap-y-6 border border-[#3031351a] rounded-lg xl:py-20 p-4 py-6 xl:px-24 h-full flex-1 xl:min-h-[646px]"
                 key={index}
               >
-                <p className="text-[#2d3436] text-3xl text-center">
+                <motion.p
+                  initial="hidden"
+                  whileInView="visible"
+                  variants={slideUp}
+                  viewport={{ once: true }}
+                  className="text-[#2d3436] text-3xl text-center"
+                >
                   {item.title}
-                </p>
+                </motion.p>
                 <p className="text-[#636e72] text-lg">{item.text}</p>
                 {/* items */}
                 <ul className="flex flex-col gap-y-3 w-full">
