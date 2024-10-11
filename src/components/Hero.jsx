@@ -1,18 +1,18 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import ButtonOrLink from './ButtonOrLink';
+import TextReveal from './TextReveal';
 
 const Hero = () => {
   return (
     <section>
       <div
-        className="w-full min-h-[40vw] bg-no-repeat"
+        className="w-full min-h-[40vw] bg-no-repeat py-20"
         style={{
           backgroundImage: "url('/images/trump-kamala-desktop-2x.webp')",
         }}
       >
-        <div className="container mx-auto relative pt-10 h-[718px]">
+        <div className="container mx-auto relative pt-10 h-[708px]">
           {/* logo */}
           <div className="w-[130px] h-[130px] bg-[#F41112] flex items-center justify-center absolute">
             <Image src="/icons/fxPro.svg" width={94} height={42} alt="logo" />
@@ -22,15 +22,23 @@ const Hero = () => {
           <div className="flex items-end justify-between h-full">
             <div className="flex flex-col">
               <div>
-                <span className="text-4xl">
+                {/* <span className="text-4xl">
                   Negocie
                   <br />e participe
-                </span>
+                </span> */}
+                <TextReveal as="span" className="text-4xl">
+                  Negocie
+                  <br />e participe
+                </TextReveal>
 
-                <h1 className="text-8xl">1 Milhão</h1>
+                <TextReveal as="h1" className={'text-8xl'}>
+                  1 Milhão
+                </TextReveal>
               </div>
               <div>
-                <h2 className="text-8xl">em prêmios</h2>
+                <TextReveal as="h2" className={'text-8xl'} direction="right">
+                  em prêmios
+                </TextReveal>
               </div>
             </div>
 
