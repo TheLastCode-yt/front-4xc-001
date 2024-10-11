@@ -76,7 +76,7 @@ const OfficialSoftwareDownloadSection = () => {
                 <Link href={'/'}>
                   <Image
                     src="/icons/google-button.svg"
-                    width={135}
+                    width={135} 
                     height={40}
                     className=""
                     alt="google play"
