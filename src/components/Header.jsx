@@ -73,22 +73,56 @@ const Header = () => {
               <div className="block md:hidden">
                 <button
                   onClick={toggleMenu}
-                  className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75"
+                  className={`relative group bg-custom__blue-focus p-[10px] rounded transition-all duration-200`}
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="size-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth="2"
+                  <div
+                    className={`relative flex overflow-hidden items-center justify-center w-[18px] h-[18px] transform transition-all duration-200`}
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M4 6h16M4 12h16M4 18h16"
-                    />
-                  </svg>
+                    <div
+                      className={`flex flex-col justify-between w-[18px] h-[18px] transform transition-all duration-300 origin-center overflow-hidden`}
+                    >
+                      {/* First line */}
+                      <div
+                        className={`bg-custom__blue h-[2px] w-7 transform transition-all duration-300 origin-left ${
+                          isMenuOpen ? 'translate-x-10' : 'translate-x-0'
+                        }`}
+                      />
+                      {/* Second line */}
+                      <div
+                        className={`bg-custom__blue h-[2px] w-7 rounded transform transition-all duration-300 ${
+                          isMenuOpen
+                            ? 'translate-x-10 delay-75'
+                            : 'translate-x-0'
+                        }`}
+                      />
+                      {/* Third line */}
+                      <div
+                        className={`bg-custom__blue h-[2px] w-7 transform transition-all duration-300 origin-left ${
+                          isMenuOpen
+                            ? 'translate-x-10 delay-150'
+                            : 'translate-x-0'
+                        }`}
+                      />
+
+                      {/* Cross lines */}
+                      <div
+                        className={`absolute items-center justify-between transform transition-all duration-500 top-2.5 ${
+                          isMenuOpen ? 'translate-x-0' : '-translate-x-10'
+                        } flex w-0 ${isMenuOpen ? 'w-12' : 'overflow-hidden'}`}
+                      >
+                        <div
+                          className={`absolute bg-custom__blue h-[2px] w-5 transform transition-all duration-500 rotate-0 delay-300 ${
+                            isMenuOpen ? 'rotate-45' : 'rotate-0'
+                          }`}
+                        />
+                        <div
+                          className={`absolute bg-custom__blue h-[2px] w-5 transform transition-all duration-500 -rotate-0 delay-300 ${
+                            isMenuOpen ? '-rotate-45' : 'rotate-0'
+                          }`}
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </button>
               </div>
             </div>
@@ -97,21 +131,21 @@ const Header = () => {
 
         {/* Mobile Navigation Menu with Animation */}
         <div
-          className={`md:hidden transition-all duration-300 ease-in-out ${
-            isMenuOpen ? 'max-h-screen' : 'max-h-0 overflow-hidden'
-          }`}
+          className={`md:hidden transition-all duration-500 
+            ${isMenuOpen ? 'max-h-screen' : 'max-h-0 overflow-hidden'}`}
         >
           <nav aria-label="Global">
             <ul className="flex flex-col items-start mt-2 space-y-2">
               {links.map((link, index) => (
-                <li key={index}>
+                <li key={index} className="py-2">
                   <Link
                     href={link.url}
-                    className={`block transition-all duration-300 ${
-                      pathname === link.url
-                        ? 'text-custom__blue'
-                        : 'text-black hover:text-custom__blue'
-                    }`}
+                    className={`block transition-all duration-500 font-bold
+                      ${
+                        pathname === link.url
+                          ? 'text-custom__blue'
+                          : 'text-black hover:text-custom__blue'
+                      }`}
                     onClick={toggleMenu} // Close menu on link click
                   >
                     {link.name}

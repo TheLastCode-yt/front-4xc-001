@@ -23,6 +23,7 @@ module.exports = {
       },
       colors: {
         custom__blue: 'var(--custom__blue)',
+        'custom__blue-focus': 'var(--custom__blue-focus)',
       },
       animation: {
         scroll:
