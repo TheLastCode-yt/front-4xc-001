@@ -18,8 +18,14 @@ const ExchangeNumbersSection = () => {
     <section className="py-10 bg-[#fbf9f7] relative">
       {/* Background text */}
 
-      <div className="text-[166px] font-bold text-[#f8f4f1] uppercase absolute top-0 left-0 right-0 xl:flex justify-center -z-0 items-center translate-y-1/2 hidden ">
+      {/* <div className="text-[166px] font-bold text-[#f8f4f1] uppercase absolute top-0 left-0 right-0 xl:flex justify-center -z-0 items-center translate-y-1/2 hidden ">
         {textBackground}
+      </div> */}
+
+      <div className="absolute inset-0 flex justify-center items-center -z-0">
+        <p className="text-[166px] font-bold text-[#f8f4f1] uppercase text-nowrap whitespace-nowrap">
+          {textBackground}
+        </p>
       </div>
 
       <div className="container mx-auto z-10 relative">
@@ -33,7 +39,7 @@ const ExchangeNumbersSection = () => {
 
             return (
               <div
-                key={index}
+                key={`${index}-dsa1`}
                 className={`flex flex-col gap-y-2 items-center py-8
                   border-b-[#e4d8cb] border-b 
                   xl:col-span-3 col-span-6 md:col-span-6
