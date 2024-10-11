@@ -8,7 +8,7 @@ const Header = () => {
   const links = [
     { name: 'abrir conta', url: '/account/open' },
     { name: 'metodos de deposito', url: '/pricing/deposit-methods' },
-    { name: 'link 3', url: '/princing/model' },
+    { name: 'link 3', url: '/pricing/model' },
     { name: 'segurança', url: '/safety' },
   ];
 
