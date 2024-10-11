@@ -7,10 +7,10 @@ import AppleButton from './layout/AppleButton';
 
 const AppSection = () => {
   return (
-    <section className="relative">
+    <section className="relative ">
       <div className="w-full h-full absolute top-0 right-[165px] bg-black -z-10 mr-[165px]" />
 
-      <div className="container mx-auto  flex items-center justify-center ">
+      <div className="container mx-auto  flex items-center justify-center min-h-[860px]">
         <div className="w-full flex items-center justify-start">
           <div className="flex flex-col gap-y-6">
             {/* apple btn */}
@@ -50,6 +50,7 @@ const AppSection = () => {
               alt="trader app mobile"
               width={337}
               height={523}
+              className="w-auto max-h-[620px]"
             />
           </div>
 

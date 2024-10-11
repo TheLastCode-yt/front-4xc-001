@@ -32,7 +32,7 @@ const TradingPlataform = () => {
   ];
 
   return (
-    <section className="py-20 text-black">
+    <section className="py-20 text-black ">
       <div className="container mx-auto">
         <div className="flex flex-col gap-y-20 items-center justify-center">
           {/* text */}

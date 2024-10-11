@@ -6,18 +6,17 @@ import ButtonOrLink from './ButtonOrLink';
 
 const Header = () => {
   const links = [
-    { name: 'Negociação', url: '/' },
-    { name: 'Mercados e Ferramentas', url: '/' },
-    { name: 'Centro de Conhecimento', url: '/' },
-    { name: 'Empresa', url: '/' },
+    { name: 'abrir conta', url: '/account/open' },
+    { name: 'metodos de deposito', url: '/pricing/deposit-methods' },
+    { name: 'link 3', url: '/princing/model' },
+    { name: 'segurança', url: '/safety' },
   ];
 
   return (
-    <header className="w-full bg-white shadow-lg h-[64px] fixed z-50">
-      <div className="container mx-auto">
-        <div className="flex justify-between items-center">
-          {/* Logo */}
-          <div>
+    <header className="bg-white fixed w-screen z-50">
+      <div className="mx-auto container max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <div className="flex h-16 items-center justify-between">
+          <div className="flex-1 md:flex md:items-center md:gap-12">
             <Link href={'/'}>
               <Image
                 alt="logo"
@@ -29,55 +28,51 @@ const Header = () => {
             </Link>
           </div>
 
-          {/* Navigation */}
-          <nav className="hidden md:flex space-x-8">
-            {links.map((link, index) => (
-              <Link
-                key={index}
-                href={link.url}
-                className="text-gray-700 hover:text-blue-500 transition-colors"
-              >
-                {link.name}
-              </Link>
-            ))}
-          </nav>
+          <div className="md:flex md:items-center md:gap-12">
+            <nav aria-label="Global" className="hidden md:block">
+              <ul className="flex items-center gap-6 text-sm">
+                {links.map((link, index) => (
+                  <li key={index}>
+                    <Link
+                      href={link.url}
+                      className="text-black hover:text-custom__blue transition-all duration-300"
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
 
-          {/* Buttons */}
-          <div className="flex items-center gap-x-2">
-            <ButtonOrLink
-              href="/"
-              className={'bg-custom__blue px-[20px] py-[10px]'}
-            >
-              Registre-se
-            </ButtonOrLink>
+            <div className="flex items-center gap-4">
+              <div className="sm:flex sm:gap-4">
+                <ButtonOrLink
+                  href={'/account/open'}
+                  className={'py-[10px] px-[20px]'}
+                >
+                  Registre-se
+                </ButtonOrLink>
+              </div>
 
-            <ButtonOrLink
-              href="/"
-              className={'px-[30px] text-blue-500 bg-transparent'}
-            >
-              Login
-            </ButtonOrLink>
-          </div>
-
-          {/* Mobile Menu */}
-          <div className="md:hidden">
-            <button className="text-gray-500 hover:text-blue-500">
-              {/* Icon for mobile menu */}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                />
-              </svg>
-            </button>
+              <div className="block md:hidden">
+                <button className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="size-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

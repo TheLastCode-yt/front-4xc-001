@@ -11,7 +11,7 @@ const ButtonOrLink = ({
   ...props
 }) => {
   const className = clsx(
-    'btn relative gap-x-2 inline-flex items-center group w-fit bg-blue-500',
+    'btn relative gap-x-2 inline-flex items-center group w-fit bg-custom__blue',
     additionalClass
   );
 

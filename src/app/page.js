@@ -38,7 +38,7 @@ export default function Home() {
   ];
 
   return (
-    <main className="pt-[64px]">
+    <main className="overflow-x-hidden pt-[64px] flex flex-col gap-y-28">
       <Hero />
       <section className="w-full">
         <div className="container mx-auto bg-custom__blue">
@@ -59,15 +59,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* <div className="container mx-auto">
-        <InfiniteMovingLetters
-          text="Olá Mundo! Esta é uma animação de marquee."
-          speed="normal"
-          className="bg-gray-800 p-4 rounded-md text-white"
-        />
-      </div> */}
-
-      {/* app section */}
       <AppSection />
 
       <TradingPlataform />
@@ -157,7 +148,7 @@ export default function Home() {
         Texto Revelado da Direita
       </TextReveal> */}
 
-      <div className="w-full h-[200vw] bg-custom__blue"></div>
+      {/* <div className="w-full h-[200vw] bg-custom__blue"></div> */}
     </main>
   );
 }
