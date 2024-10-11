@@ -5,9 +5,9 @@ const AppDoownloadSection = () => {
   return (
     <section>
       <div className="container mx-auto">
-        <div className="flex items-center justify-center relative">
+        <div className="flex items-center justify-center relative flex-col xl:flex-row gap-y-10">
           {/* image gif */}
-          <div className="flex-1 flex items-center justify-center ">
+          <div className="w-full xl:flex-1 flex items-center justify-center">
             <Image
               src="/gif/FxPro_App.gif"
               alt="gif"
@@ -19,8 +19,8 @@ const AppDoownloadSection = () => {
 
           {/* texts */}
           <div className="flex-1  min-h-[600px]">
-            <div className="flex flex-col items-start gap-y-10 w-[60%]">
-              <h2 className="text-[#2d3436] text-3xl">
+            <div className="flex flex-col items-start gap-y-10 xl:w-[60%] w-full">
+              <h2 className="text-[#2d3436] text-2xl md:text-3xl">
                 Registre-se e negocie em qualquer lugar, com o aplicativo FxPro
                 Mobile
               </h2>

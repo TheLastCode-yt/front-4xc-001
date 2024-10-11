@@ -15,11 +15,11 @@ const FeatureCardSection = () => {
   return (
     <section>
       <div className="container mx-auto">
-        <div className="flex items-center justify-center gap-x-20">
+        <div className="flex items-center justify-center xl:gap-x-20 xl:flex-row flex-col gap-y-10">
           {cardData.map((item, index) => (
             <Link
               href={item.href}
-              className="border border-[#212529] flex flex-col gap-y-6 items-center justify-center h-[210px] py-14 px-5 flex-1 hover:bg-[#303135] transition-all duration-300 rounded-md group text-center"
+              className="border border-[#212529] flex flex-col gap-y-6 items-center justify-center xl:h-[210px] px-4 py-10 xl:py-14 xl:px-5 flex-1 hover:bg-[#303135] transition-all duration-300 rounded-md group text-center w-full"
               key={index}
             >
               {/* icon */}

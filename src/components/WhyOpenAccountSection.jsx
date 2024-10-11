@@ -43,9 +43,9 @@ const WhyOpenAccountSection = () => {
       <div className="container mx-auto">
         <div className="flex flex-col gap-y-10">
           <div>
-            <ul className="flex items-center justify-between gap-x-4 w-full">
+            <ul className="flex items-center justify-between flex-wrap gap-y-10 gap-x-4 w-full">
               {cardsData.map((item, index) => (
-                <li className="flex-1">
+                <li className="xl:flex-1">
                   <Link
                     href={item.href}
                     key={index}
@@ -79,7 +79,7 @@ const WhyOpenAccountSection = () => {
 
           {/* texts */}
           <div className="text-center px-6 w-full flex items-center justify-center flex-col gap-y-6">
-            <div className="flex flex-col items-center justify-center gap-y-6 w-[55%]">
+            <div className="flex flex-col items-center justify-center gap-y-6 xl:w-[55%]">
               <h2 className="text-2xl font-medium text-[#2d3436]">
                 Por que abrir uma conta de negociação com a FxPro?
               </h2>
@@ -110,7 +110,7 @@ const WhyOpenAccountSection = () => {
           </div>
 
           {/* section 3 */}
-          <div className="flex items-center relative">
+          <div className=" items-center relative hidden xl:flex">
             {textsData.map((text, index) => (
               <div
                 key={index}
@@ -120,6 +120,16 @@ const WhyOpenAccountSection = () => {
                   ${index !== 0 && index !== textsData.length - 1 && 'border-x'}
                   `}
               >
+                <TextItem iconSrc="/icons/correct.svg" title={text.title} />
+                <TextItem iconSrc="/icons/correct.svg" text={text.text} />
+              </div>
+            ))}
+          </div>
+
+          {/* section 3 mobile */}
+          <div className="xl:hidden flex flex-col gap-y-10">
+            {textsData.map((text, index) => (
+              <div key={index} className="flex flex-col gap-y-10">
                 <TextItem iconSrc="/icons/correct.svg" title={text.title} />
                 <TextItem iconSrc="/icons/correct.svg" text={text.text} />
               </div>

@@ -47,7 +47,7 @@ const OurHistorySection = () => {
   ];
   return (
     <section className="w-full  xl:block hidden">
-      <div className="flex flex-col gap-y-24 items-center justify-center">
+      <div className="flex flex-col xl:gap-y-24 items-center justify-center">
         <h2 className="text-[#2d3436] text-5xl">Nossa História</h2>
 
         <div className="w-full bg-[#f8f8f8] py-10">

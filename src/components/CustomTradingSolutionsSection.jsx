@@ -30,15 +30,15 @@ const CustomTradingSolutionsSection = () => {
   return (
     <section>
       <div className="container mx-auto">
-        <div className="flex flex-col gap-y-10 items-center justify-center">
-          <h2 className="text-[#2d3436] text-4xl">
+        <div className="flex flex-col gap-y-10 items-center justify-center text-center">
+          <h2 className="text-[#2d3436] text-3xl sm:text-4xl">
             Soluções de negociação sob medida
           </h2>
 
-          <div className="flex items-start justify-between gap-x-20 2xl:gap-x-36 relative h-full">
+          <div className="flex items-start  flex-col gap-y-10 xl:flex-row xl:justify-between xl:gap-x-20 2xl:gap-x-36 relative h-full px-2">
             {solutionsData.map((item, index) => (
               <div
-                className=" flex flex-col items-center gap-y-6 border border-[#3031351a] rounded-lg py-20 px-24 h-full flex-1 xl:min-h-[646px]"
+                className=" flex flex-col items-center gap-y-6 border border-[#3031351a] rounded-lg xl:py-20 p-4 py-6 xl:px-24 h-full flex-1 xl:min-h-[646px]"
                 key={index}
               >
                 <p className="text-[#2d3436] text-3xl text-center">

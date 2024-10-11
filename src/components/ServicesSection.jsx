@@ -4,12 +4,12 @@ const ServicesSection = () => {
   return (
     <section>
       <div className="container mx-auto">
-        <div className="grid grid-cols-12 gap-20">
+        <div className="grid grid-cols-6  gap-y-10 md:gap-10 xl:gap-20 items-center justify-center">
           {/* card 1 */}
-          <div className=" flex items-center justify-center col-span-6">
+          <div className=" flex items-center justify-center col-span-6 md:col-span-3 h-full">
             <Link
               href="/"
-              className="flex items-start p-10 justify-center gap-x-6 max-w-[80%] bg-[#f5f6f7] rounded-lg h-full"
+              className="flex items-center text-center xl:text-left xl:flex-row flex-col xl:items-start p-10 justify-center gap-x-6 xl:max-w-[80%] bg-[#f5f6f7] rounded-lg h-full"
             >
               <div className="bg-white p-6 rounded-full">
                 <Image
@@ -34,11 +34,12 @@ const ServicesSection = () => {
               </div>
             </Link>
           </div>
+
           {/* card 2 */}
-          <div className=" flex items-center justify-center col-span-6">
+          <div className=" flex items-center justify-center col-span-6 w-full md:col-span-3 h-full">
             <Link
               href="/"
-              className="flex items-start p-10 justify-center gap-x-6 max-w-[80%] bg-[#f5f6f7] rounded-lg h-full"
+              className="flex items-center text-center xl:text-left xl:items-start flex-col xl:flex-row p-10 justify-center gap-x-6 xl:max-w-[80%] bg-[#f5f6f7] rounded-lg h-full"
             >
               <div className="bg-white p-6 rounded-full">
                 <Image
@@ -63,10 +64,11 @@ const ServicesSection = () => {
               </div>
             </Link>
           </div>
+
           {/* card 4 */}
-          <div className=" flex items-center justify-center col-span-6">
+          <div className="flex items-center justify-center col-span-6 md:col-span-3 h-full w-full">
             <Link
-              className="flex flex-col bg-[#f5f6f7] gap-y-6 items-center justify-center p-10 rounded-lg  max-w-[80%] h-full w-full"
+              className="flex flex-col bg-[#f5f6f7] gap-y-6 items-center justify-center p-10 rounded-lg  xl:max-w-[80%] h-full w-full"
               href={'/'}
             >
               {/* image */}
@@ -88,9 +90,9 @@ const ServicesSection = () => {
             </Link>
           </div>
           {/* card 3 */}
-          <div className=" flex items-center justify-center col-span-6">
+          <div className=" flex items-center justify-center col-span-6 md:col-span-3">
             <Link
-              className="flex flex-col bg-[#f5f6f7] gap-y-6 items-center justify-center p-10 rounded-lg  max-w-[80%] h-full w-full"
+              className="flex flex-col bg-[#f5f6f7] gap-y-6 items-center justify-center p-10 rounded-lg  xl:max-w-[80%] h-full w-full"
               href={'/'}
             >
               {/* image */}

@@ -32,12 +32,12 @@ const FaqSection = () => {
       <div className="container mx-auto">
         <div className="flex flex-col gap-y-10 items-center justify-center">
           <h2 className="text-[#2d3436] text-4xl">Perguntas frequentes</h2>
-          <div className="grid grid-cols-12 gap-10">
+          <div className="grid grid-cols-6 gap-6 xl:gap-10">
             {faqData.map((item, index) => (
               <Link
                 href={item.link}
                 key={index}
-                className="col-span-12 md:col-span-6 xl:col-span-4 px-5 text-center flex items-center justify-center text-[#303135] bg-[#30313508] text-xl font-medium h-[80px]"
+                className="col-span-6 md:col-span-3 xl:col-span-2 px-5 text-center flex items-center justify-center text-[#303135] bg-[#30313508] text-xl font-medium h-[80px]"
               >
                 {item.question}
               </Link>
