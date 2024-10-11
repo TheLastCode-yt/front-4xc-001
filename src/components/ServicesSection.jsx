@@ -28,7 +28,7 @@ const ServicesSection = () => {
                   Ajuda instantânea do nosso suporte qualificado escreva-nos
                   para{' '}
                   <span className="text-xl text-[#b68756]">
-                    support@fxpro.com
+                    support@trader4xc.com
                   </span>
                 </p>
               </div>

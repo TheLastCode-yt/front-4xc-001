@@ -2,7 +2,7 @@ import Image from 'next/image';
 const SuspiciousContactSection = () => {
   const textData = [
     'Não fornece troca física ou serviços de pagamento relacionados a Criptomoedas.',
-    'Nunca solicitará que você faça transferências de e para sua conta. Faça pagamentos apenas através do nosso portal FxPro Direct.',
+    'Nunca solicitará que você faça transferências de e para sua conta. Faça pagamentos apenas através do nosso portal Trader 4xc Direct.',
     'Nunca solicitará sua(s) senha(s) ou outras informações confidenciais.',
     'Os serviços não incluem a gestão de ativos ou a garantia de qualquer retorno sobre o investimento.',
     'Não se envolverá em nenhum conselho de investimento ou negociação.',
@@ -14,12 +14,12 @@ const SuspiciousContactSection = () => {
         <div className="grid grid-cols-12  py-4 px-2 md:p-10 xl:p-24 bg-[#F4F4F4] text-4xl font-semibold gap-y-10 xl:gap-y-20">
           {/* texts */}
           <div className="col-span-12 md:col-span-6">
-            <h2>Contato suspeito alegando ser FxPro</h2>
+            <h2>Contato suspeito alegando ser Trader 4xc</h2>
           </div>
 
           <div className="col-span-12 md:col-span-6 pl-6 border-l-4 border-black items-center flex">
             <p className="text-sm">
-              Para maior clareza, gostaríamos de destacar que o FxPro:
+              Para maior clareza, gostaríamos de destacar que o Trader 4xc:
             </p>
           </div>
 

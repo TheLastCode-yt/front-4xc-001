@@ -81,13 +81,13 @@ const WhyOpenAccountSection = () => {
           <div className="text-center px-6 w-full flex items-center justify-center flex-col gap-y-6">
             <div className="flex flex-col items-center justify-center gap-y-6 xl:w-[55%]">
               <h2 className="text-2xl font-medium text-[#2d3436]">
-                Por que abrir uma conta de negociação com a FxPro?
+                Por que abrir uma conta de negociação com a Trader 4xc?
               </h2>
 
               <p className="text-[#2d3436]">O corretor nº 1 do mundo*</p>
 
               <p className="text-[#2d3436]">
-                Com as contas de negociação ao vivo da FxPro, você pode
+                Com as contas de negociação ao vivo da Trader 4xc, você pode
                 experimentar o melhor em execução de ordens e tecnologia de
                 negociação, juntamente com poderosas ferramentas de negociação e
                 análise especializada.

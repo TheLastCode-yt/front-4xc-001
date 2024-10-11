@@ -21,12 +21,12 @@ const AppDoownloadSection = () => {
           <div className="flex-1  xl:min-h-[600px]">
             <div className="flex flex-col items-start gap-y-10 xl:w-[60%] w-full">
               <h2 className="text-[#2d3436] text-2xl md:text-3xl">
-                Registre-se e negocie em qualquer lugar, com o aplicativo FxPro
-                Mobile
+                Registre-se e negocie em qualquer lugar, com o aplicativo Trader
+                4xc Mobile
               </h2>
 
               <p className="text-[#636e72]">
-                Baixe nosso aplicativo FxPro Mobile para iOS e Android para
+                Baixe nosso aplicativo Trader 4xc Mobile para iOS e Android para
                 registrar e gerenciar suas contas em qualquer lugar. Você também
                 pode negociar na plataforma de negociação integrada.
               </p>

@@ -17,7 +17,7 @@ const CustomTradingSolutionsSection = () => {
     {
       title: ['VIP ', <br key="line-break" />, 'Conta de negociação'],
 
-      text: 'As contas FxPro VVIP são contas de negociação exclusivas para indivíduos de elevados rendimentos, que negoceiam grandes volumes',
+      text: 'As contas Trader 4xc VVIP são contas de negociação exclusivas para indivíduos de elevados rendimentos, que negoceiam grandes volumes',
       items: [
         'Até 30% de desconto nos spreads de mercado',
         'Acesso a VPS grátis',

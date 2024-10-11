@@ -14,7 +14,7 @@ const FaqSection = () => {
       link: '/',
     },
     {
-      question: 'Posso abrir mais de uma conta com a FxPro?',
+      question: 'Posso abrir mais de uma conta com a Trader 4xc?',
       link: '/',
     },
     {

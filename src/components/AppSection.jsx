@@ -38,7 +38,7 @@ const AppSection = () => {
                 width={16}
                 height={26}
               />
-              <span>Escaneie para baixar o aplicativo de negociação FxPro</span>
+              <span>Escaneie para baixar o aplicativo de negociação Trader 4xc</span>
             </div>
           </div>
 

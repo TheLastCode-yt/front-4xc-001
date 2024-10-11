@@ -69,7 +69,7 @@ const page = () => {
         <div className="container mx-auto flex items-center justify-center">
           <div className="w-full xl:w-[66.6%] 2xl:w-[50%]">
             <p className="text-center max- text-[#2d3436] text-xl sm:text-2xl">
-              Desde a nossa criação, a FxPro expandiu-se com sucesso para servir
+              Desde a nossa criação, a Trader 4xc expandiu-se com sucesso para servir
               clientes de varejo e institucionais em mais de 170 países - e
               continuamos a crescer.
             </p>

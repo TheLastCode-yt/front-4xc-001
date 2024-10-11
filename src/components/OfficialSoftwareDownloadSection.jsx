@@ -53,7 +53,7 @@ const OfficialSoftwareDownloadSection = () => {
             {/* grid 1 */}
             <div className="flex flex-col gap-y-3 md:col-span-6 md:pr-10 col-span-12">
               <p>
-                O aplicativo móvel oficial da FxPro está disponível para
+                O aplicativo móvel oficial da Trader 4xc está disponível para
                 download apenas na Apple App Store e na Google Play Store.
                 Outros softwares de negociação oficiais fornecidos por nós podem
                 ser encontrados em nosso{' '}

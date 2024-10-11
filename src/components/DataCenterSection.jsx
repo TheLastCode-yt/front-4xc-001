@@ -12,7 +12,7 @@ const DataCenterSection = () => {
               Centro de Dados de ponta e agregador interno
             </h2>
             <p className="text-sm leading-[170%]">
-              Na FxPro, nosso centro de dados de ponta em LD4 London posiciona
+              Na Trader 4xc, nosso centro de dados de ponta em LD4 London posiciona
               estrategicamente nossos servidores de negociação para execução
               extremamente rápida. Co-localizado nesta instalação de última
               geração e perfeitamente conectado com bancos de Nível 1, nosso

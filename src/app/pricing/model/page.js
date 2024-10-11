@@ -99,7 +99,7 @@ const page = () => {
             <div className="flex flex-col gap-y-8 xl:max-w-lg w-full flex-1">
               <h2 className="text-2xl font-semibold">Negociação Ética</h2>
               <p className="text-sm leading-[170%]">
-                A FxPro defende a adoção de maior transparência e padrões éticos
+                A Trader 4xc defende a adoção de maior transparência e padrões éticos
                 dentro do setor de trading online. Sem manipulação, sem caça de
                 stop loss, sem preocupações!
               </p>
@@ -130,7 +130,7 @@ const page = () => {
       <section>
         <div className="container mx-auto flex flex-col gap-y-12 text-black items-center justify-center">
           <p className="max-w-xl text-5xl leading-[120%] text-center">
-            Desbloqueie o poder da <strong>execução NDD</strong> com a FxPro
+            Desbloqueie o poder da <strong>execução NDD</strong> com a Trader 4xc
             hoje mesmo!
           </p>
 

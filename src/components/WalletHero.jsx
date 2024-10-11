@@ -17,7 +17,7 @@ const WalletHero = () => {
 
         <div className="xl:max-w-[40%] xl:absolute left-[10%]">
           <h1 className="text-[#2d3436] text-4xl xl:text-5xl xl:leading-[1.22] 2xl:leading-[1.3] font-medium">
-            Financie através da Carteira FxPro -
+            Financie através da Carteira Trader 4xc -
             <small>
               uma ferramenta inovadora de gestão de dinheiro e risco
             </small>
@@ -26,9 +26,9 @@ const WalletHero = () => {
 
         <div className="flex flex-col gap-y-10 xl:max-w-[40%] xl:absolute bottom-0 left-[10%]">
           <p className="text-[#636e72]">
-            A FxPro tornou o depósito e a retirada de fundos ainda mais fáceis
-            com a Carteira FxPro. Agora você pode transferir fundos entre sua
-            carteira FxPro e contas de negociação a qualquer momento que
+            A Trader 4xc tornou o depósito e a retirada de fundos ainda mais fáceis
+            com a Carteira Trader 4xc. Agora você pode transferir fundos entre sua
+            carteira Trader 4xc e contas de negociação a qualquer momento que
             desejar.
           </p>
 
@@ -43,7 +43,7 @@ const WalletHero = () => {
               width={27}
               height={31}
             />
-            Como funciona a Carteira FxPro
+            Como funciona a Carteira Trader 4xc
           </Link>
         </div>
 

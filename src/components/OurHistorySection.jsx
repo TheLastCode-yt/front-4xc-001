@@ -36,12 +36,12 @@ const OurHistorySection = () => {
     },
     {
       img: 'logo-history-5',
-      title: 'FxPro hoje',
+      title: 'Trader 4xc hoje',
       text: '2023',
     },
     {
       img: 'logo-history-6',
-      title: 'FxPro Amanhã',
+      title: 'Trader 4xc Amanhã',
       text: '2025',
     },
   ];
@@ -80,7 +80,7 @@ const Card = ({ img, title, text }) => {
           height={170}
           alt={img}
           src={`/icons/${img}.svg`}
-          className="min-w-[170px] min-h-[170px]"
+          className="2xl:min-w-[170px] 2xl:min-h-[170px] 2xl:max-w-none max-w-[140px]"
         />
       </div>
 
@@ -92,7 +92,7 @@ const Card = ({ img, title, text }) => {
 
       {/* text */}
       <p className="text-center font-semibold text-[#2d3436]">{title}</p>
-      <span className="text-sm text-[#636e72]">{text}</span>
+      <span className="text-xs 2xl:text-sm text-[#636e72]">{text}</span>
     </div>
   );
 };

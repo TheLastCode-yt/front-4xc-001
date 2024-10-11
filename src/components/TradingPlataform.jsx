@@ -6,25 +6,25 @@ import { cn } from '@/lib/utils';
 const TradingPlataform = () => {
   const plataforms = [
     {
-      title: 'Plataforma de trading FxPro',
+      title: 'Plataforma de trading Trader 4xc',
       text: 'Eleve o seu trading com os nossos produtos',
       img: '/icons/fxpro-trading.svg',
       href: '/',
     },
     {
-      title: 'FxPro cTrader',
+      title: 'Trader 4xc cTrader',
       text: 'Experiência dinâmica, sem interrupções',
       img: '/icons/fxpro-ctrader.svg',
       href: '/',
     },
     {
-      title: 'FxPro MetaTrader 4',
+      title: 'Trader 4xc MetaTrader 4',
       text: 'A solução popular e clássica',
       img: '/icons/fxpro-mt4.svg',
       href: '/',
     },
     {
-      title: 'FxPro MetaTrader 5',
+      title: 'Trader 4xc MetaTrader 5',
       text: 'Uma evolução nas funções de negociação',
       img: '/icons/fxpro-mt5.svg',
       href: '/',

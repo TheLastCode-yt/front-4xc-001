@@ -3,7 +3,7 @@ const ReportFraudSection = () => {
   const textsData = [
     <>
       Se você receber chamadas, e-mails ou SMS não solicitados alegando ser
-      FxPro, não se envolva em nenhuma comunicação e informe-nos imediatamente
+      Trader 4xc, não se envolva em nenhuma comunicação e informe-nos imediatamente
       por meio de nossos{' '}
       <Link href={'/'} className="underline">
         canais de comunicação oficiais

@@ -76,7 +76,7 @@ const PrecautionsSection = () => {
           Desconfie de qualquer contato que peça para você fornecer detalhes da
           conta ou informações pessoais, como sua identidade. <br /> <br />
           <span className="text-blue-500">
-            A FxPro e outras empresas respeitáveis ​​nunca pediriam tais
+            A Trader 4xc e outras empresas respeitáveis ​​nunca pediriam tais
             detalhes e você deve considerar qualquer contato ou solicitação como
             suspeito.{' '}
           </span>
@@ -111,7 +111,7 @@ const PrecautionsSection = () => {
             {/* texts */}
             <div className="col-span-12 md:col-span-6">
               <h2>
-                Como a FxPro
+                Como a Trader 4xc
                 <br />
                 protege seus dados
               </h2>
@@ -119,7 +119,7 @@ const PrecautionsSection = () => {
 
             <div className="col-span-6 pl-6 border-l-4 border-black items-center flex">
               <p className="text-sm">
-                Na FxPro, a segurança dos dados do cliente é uma prioridade e
+                Na Trader 4xc, a segurança dos dados do cliente é uma prioridade e
                 temos medidas de segurança sofisticadas projetadas para proteger
                 suas informações pessoais, privacidade e fundos.
               </p>

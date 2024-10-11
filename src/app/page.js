@@ -46,7 +46,7 @@ export default function Home() {
           <div className="px-[70px] py-[50px] flex items-center justify-between">
             <div className="flex-1">
               <h1 className="text-5xl">
-                Forex, Índices, Ações e mais com a FxPro - corretora online n.º
+                Forex, Índices, Ações e mais com a Trader 4xc - corretora online n.º
                 1
               </h1>
             </div>

@@ -26,7 +26,7 @@ const DiscoverExchangeSection = () => {
           {/* texts */}
           <div className="text-black max-w-md">
             <h2 className="text-4xl md:text-5xl font-semibold leading-[120%] md:max-w-none max-w-[80%]">
-              Descubra a vantagem da FxPro
+              Descubra a vantagem da Trader 4xc
             </h2>
             <p className="my-10 text-sm">Nosso método de execução PRO</p>
           </div>

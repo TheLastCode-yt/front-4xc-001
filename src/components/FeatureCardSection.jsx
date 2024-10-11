@@ -8,7 +8,7 @@ const FeatureCardSection = () => {
       icon: 'candle-graphics',
       href: '/',
     },
-    { text: 'FxPro.News', icon: 'news', href: '/' },
+    { text: 'Trader 4xc.News', icon: 'news', href: '/' },
     { text: 'Calendário de Ganhos', icon: 'calculator', href: '/' },
     { text: 'Calendário econômico', icon: 'calendar', href: '/' },
   ];

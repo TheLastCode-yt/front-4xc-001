@@ -3,7 +3,7 @@ const DataSecuritySection = () => {
   const itemsData = [
     'Usamos os mais altos níveis de criptografia de dados em nossos sites e aplicativos',
     'Uma forte equipe de profissionais está em constante monitoramento e sempre preparada para responder a qualquer incidente ou atividades irregulares em pagamentos online',
-    'Assumimos todos os controles para manter o portal FxPro Direct como um local seguro para executar suas transações',
+    'Assumimos todos os controles para manter o portal Trader 4xc Direct como um local seguro para executar suas transações',
     'As senhas devem ser de certa complexidade e comprimento',
     'Para qualquer atualização de informações pessoais/processamento de qualquer uma de suas solicitações de dados pessoais, verificaremos se você fez essa solicitação antes de tomar qualquer ação',
     'Opção de verificação em 2 etapas',
@@ -18,7 +18,7 @@ const DataSecuritySection = () => {
           {/* texts */}
           <div className="col-span-12 md:col-span-6">
             <h2>
-              Como a FxPro
+              Como a Trader 4xc
               <br />
               protege seus dados
             </h2>
@@ -26,7 +26,7 @@ const DataSecuritySection = () => {
 
           <div className="col-span-12 md:col-span-6 pl-6 border-l-4 border-black items-center flex">
             <p className="text-sm">
-              Na FxPro, a segurança dos dados do cliente é uma prioridade e
+              Na Trader 4xc, a segurança dos dados do cliente é uma prioridade e
               temos medidas de segurança sofisticadas projetadas para proteger
               suas informações pessoais, privacidade e fundos.
             </p>

@@ -12,7 +12,7 @@ const ExchangeNumbersSection = () => {
     { title: '600+', text: 'milhões de ordens executadas' },
   ];
 
-  const textBackground = 'FxPro em números';
+  const textBackground = 'Trader 4xc em números';
 
   return (
     <section className="py-10 bg-[#fbf9f7] relative">
