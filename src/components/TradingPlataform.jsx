@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
-
+import TextReveal from './TextReveal';
 const TradingPlataform = () => {
   const plataforms = [
     {
@@ -36,11 +36,18 @@ const TradingPlataform = () => {
       <div className="container mx-auto">
         <div className="flex flex-col gap-y-20 items-center justify-center">
           {/* text */}
-          <div className="flex items-center justify-between ">
+          <div className="flex items-center flex-col gap-y-10 md:flex-row md:justify-between">
             <div className="flex-1">
-              <h2 className="text-5xl font-semibold">
+              {/* <h2 className="text-4xl xl:text-5xl font-semibold">
                 Navegue por toda a gama de plataformas
-              </h2>
+              </h2> */}
+              <TextReveal
+                as="h2"
+                className="text-4xl xl:text-5xl font-semibold"
+              >
+                {' '}
+                Navegue por toda a gama de plataformas
+              </TextReveal>
             </div>
 
             <div className="flex-1">
@@ -57,7 +64,7 @@ const TradingPlataform = () => {
           </div>
 
           {/* image */}
-          <div className="relative w-full flex items-center justify-center">
+          <div className="relative w-full flex items-center justify-center flex-col  gap-y-3 xl:flex-row">
             <Image
               src="/images/platforms.webp"
               alt="platforms trading"
@@ -67,22 +74,22 @@ const TradingPlataform = () => {
             {/* card 1 */}
             <Card
               {...plataforms[0]}
-              className={'absolute top-[12%] left-[20%]'}
+              className={'xl:absolute xl:top-[12%] xl:left-[20%]'}
             />
             {/* card 2 */}
             <Card
               {...plataforms[1]}
-              className={'absolute left-[11%] bottom-[10%]'}
+              className={'xl:absolute xl:left-[11%] xl:bottom-[10%]'}
             />
             {/* card 3 */}
             <Card
               {...plataforms[2]}
-              className={'absolute top-[15%] right-[14%]'}
+              className={'xl:absolute xl:top-[15%] xl:right-[14%]'}
             />
             {/* card 4 */}
             <Card
               {...plataforms[3]}
-              className={'absolute right-[18%] bottom-[17%]'}
+              className={'xl:absolute xl:right-[18%] xl:bottom-[17%]'}
             />
           </div>
         </div>
@@ -96,7 +103,7 @@ const Card = ({ img, title, text, href, className }) => {
     <Link
       href={href}
       className={cn(
-        'py-8 px-3 bg-white hover:bg-black transition-all duration-300 text-black hover:text-white flex items-center gap-x-5 w-fit max-w-[310px]',
+        'py-8 px-3 bg-[#f3f3f3] xl:bg-white hover:bg-black transition-all duration-300 text-black hover:text-white flex items-center gap-x-5 xl:w-fit xl:max-w-[310px] w-full',
         className
       )}
     >

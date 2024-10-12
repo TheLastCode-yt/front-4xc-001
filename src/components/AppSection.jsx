@@ -7,11 +7,11 @@ import TextReveal from './TextReveal';
 const AppSection = () => {
   return (
     <section className="relative py-[100px]">
-      <div className="w-full h-full absolute top-0 right-[160px] bg-black -z-10 mr-[100px]" />
+      <div className="w-full h-full absolute top-0 xl:right-[160px] bg-black -z-10 mr-[100px]" />
 
       <div className="container mx-auto z-10">
-        <div className="w-full grid  grid-cols-[135px_auto_370px] items-center justify-start gap-20 ">
-          <div className="flex flex-col gap-y-6 ">
+        <div className="w-full grid md:grid-cols-2 xl:grid-cols-[135px_auto_370px] items-center justify-center  xl:justify-start gap-20">
+          <div className="flex items-center justify-center flex-col gap-y-6 order-3 xl:order-1 md:hidden xl:flex">
             {/* apple btn */}
             <Link href={'/'} className="bg-white rounded w-fit">
               <Image
@@ -31,7 +31,7 @@ const AppSection = () => {
               />
             </Link>
             {/* qr code icon */}
-            <div className="flex gap-x-2 items-center">
+            <div className="gap-x-2 items-center hidden xl:flex">
               <Image
                 alt="qr code icon"
                 src="/icons/qr-code.svg"
@@ -45,7 +45,7 @@ const AppSection = () => {
           </div>
 
           {/* image */}
-          <div className=" ">
+          <div className="order-2  mx-auto">
             <Image
               src="/images/trade-on-mobile.webp"
               alt="trader app mobile"
@@ -56,7 +56,7 @@ const AppSection = () => {
           </div>
 
           {/* text */}
-          <div className="flex items-start flex-col gap-y-6">
+          <div className="flex items-start flex-col gap-y-6 order-1 md:order-2  xl:order-3 ">
             <TextReveal as="h2" className={'text-4xl'} duration={2}>
               Negocie em dispositivos móveis
             </TextReveal>
@@ -106,6 +106,26 @@ const AppSection = () => {
                   </span>
                 </div>
               </div>
+            </div>
+
+            <div className="md:flex flex-col gap-y-2 hidden xl:hidden">
+              <Link href={'/'} className="bg-white rounded w-fit">
+                <Image
+                  alt="apple store"
+                  src="/icons/apple-store.svg"
+                  width={135}
+                  height={40}
+                />
+              </Link>
+              {/* google btn*/}
+              <Link href={'/'} className="bg-white rounded w-fit">
+                <Image
+                  alt="google play"
+                  src="/icons/google-play.svg"
+                  width={135}
+                  height={40}
+                />
+              </Link>
             </div>
           </div>
         </div>

@@ -5,12 +5,6 @@ import Image from 'next/image';
 import ArrowSvg from './layout/ArrowSvg';
 
 const PickAccountSection = () => {
-  const [activeDiv, setActiveDiv] = useState(null);
-
-  const handleMouseEnter = index => {
-    setActiveDiv(index);
-  };
-
   const accountsTypes = [
     {
       title: 'Standard',
@@ -41,11 +35,45 @@ const PickAccountSection = () => {
       carouselText: 'cTrader',
     },
   ];
+  const [activeDiv, setActiveDiv] = useState(null);
+  const [selectedDiv, setSelectedDiv] = useState(accountsTypes[0]);
+  const handleMouseEnter = index => {
+    setActiveDiv(index);
+  };
 
   return (
     <section>
       <div className="container mx-auto">
-        <div className="w-full flex items-center justify-center gap-x-20">
+        {/* Mobile Version */}
+        <div className="flex items-center justify-between md:hidden">
+          {accountsTypes.map((item, index) => (
+            <button
+              key={index}
+              onClick={() => setSelectedDiv(item)}
+              className={` transition-all text-black bg-none rounded-full text-sm p-3 sm:p-5 sm:text-base 
+                ${
+                  selectedDiv.title === item.title &&
+                  'border-custom__blue border'
+                }`}
+            >
+              {item.title}
+            </button>
+          ))}
+        </div>
+
+        <div className="w-full block md:hidden mt-10">
+          <PickAccountCard
+            title={selectedDiv.title}
+            text={selectedDiv.text}
+            deposit={selectedDiv.deposit}
+            carouselText={selectedDiv.carouselText}
+            href={selectedDiv.href}
+            isActive={true}
+          />
+        </div>
+
+        {/* desktop version */}
+        <div className="w-full hidden md:flex items-center justify-center gap-x-20">
           {accountsTypes.map((item, index) => (
             <PickAccountCard
               key={index}
@@ -76,8 +104,10 @@ const PickAccountCard = ({
   return (
     <div
       onMouseEnter={onMouseEnter}
-      className={`transition-all h-[400px] max-w-[570px] max-h-[400px] p-16 bg-[#F8F8F8] text-black
-        ${isActive ? 'w-[570px]' : 'w-[170px]'} overflow-hidden relative`}
+      className={`transition-all h-[400px] max-w-[570px] max-h-[400px] px-4 xl:p-16 bg-[#F8F8F8] text-black
+        ${
+          isActive ? 'md:w-[570px] w-full' : 'w-[170px]'
+        } overflow-hidden relative`}
     >
       {/* carrousel */}
       <div

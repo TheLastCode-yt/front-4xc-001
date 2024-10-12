@@ -62,7 +62,7 @@ const MarqueeText = ({
     <div
       ref={containerRef}
       className={cn(
-        `relative flex z-10 flex-col gap-y-10 items-start justify-center cursor-pointer overflow-hidden ${containerHeight}`,
+        `relative flex z-10 flex-col gap-y-10 items-center xl:items-start justify-center cursor-pointer overflow-hidden ${containerHeight}`,
         className
       )}
       onMouseEnter={() => setIsHovering(true)}
@@ -89,7 +89,7 @@ const MarqueeText = ({
         {carouselText}
       </div>
 
-      <div className="w-full">
+      <div className="w-full xl:text-start text-center">
         <h3 className="text-4xl font-semibold">{title}</h3>
         <p className="text-xl">{subtitle}</p>
       </div>
@@ -109,7 +109,7 @@ const AchievementsSection = () => {
       text: 'FxPro has been providing online trading services to clients since 2002 and it currently serves 173 countries worldwide.',
       carouselText: 'client accounts',
       containerHeight: 'h-[460px]',
-      className: 'w-[570px] pl-[135px] mt-[50px]',
+      className: 'xl:w-[570px] xl:pl-[135px] xl:mt-[50px]',
     },
     {
       title: '112+',
@@ -117,7 +117,7 @@ const AchievementsSection = () => {
       text: 'FxPro has received constant recognition in the industry, winning over 112 international awards to date for the quality of its services.',
       carouselText: 'Awards',
       containerHeight: 'h-[460px]',
-      className: 'w-[430px] -ml-[160px] mt-[150px] pl-[30px]',
+      className: 'xl:w-[430px] xl:-ml-[160px] xl:mt-[150px] xl:pl-[30px]',
     },
     {
       title: '5-star',
@@ -125,7 +125,7 @@ const AchievementsSection = () => {
       text: 'Our dedicated, multilingual customer service team works 24/5 to provide you with an exceptional level of support.',
       carouselText: 'customer service',
       containerHeight: 'h-[460px]',
-      className: 'w-[400px] pl-[30px] -ml-[125px]',
+      className: 'xl:w-[400px] xl:pl-[30px] xl:-ml-[125px]',
     },
     {
       title: '5',
@@ -133,14 +133,14 @@ const AchievementsSection = () => {
       text: 'FxPro is well-known throughout the industry as a trustworthy and reliable broker. We are regulated by the FCA, CySEC, FSCA and SCB.',
       carouselText: 'industry regulations',
       containerHeight: 'h-[460px]',
-      className: 'pl-[30px] w-[480px] -ml-[100px] mt-[80px]',
+      className: 'xl:pl-[30px] xl:w-[480px] xl:-ml-[100px] xl:mt-[80px]',
     },
   ];
 
   return (
     <section>
       <div className="container mx-auto ">
-        <div className="relative flex">
+        <div className="relative flex md:grid md:grid-cols-2 md:gap-x-6 xl:flex xl:gap-x-0 xl:flex-nowrap xl:flex-row flex-col gap-y-6">
           {achievementsData.map((achievement, index) => (
             <MarqueeText
               key={index}

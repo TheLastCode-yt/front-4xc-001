@@ -38,17 +38,17 @@ export default function Home() {
     <main className="overflow-x-hidden pt-[64px] flex flex-col gap-y-20">
       <Hero />
 
-      <section className="w-full">
+      <section className="w-full px-[10px]">
         <div className="container mx-auto bg-custom__blue">
-          <div className="px-[70px] py-[50px] flex items-center justify-between">
+          <div className="px-[12px] py-[24px] sm:px-[20px] sm:py-[30px] xl:px-[70px] xl:py-[50px] flex items-center justify-between flex-col md:flex-row gap-y-10">
             <div className="flex-1">
-              <h1 className="text-5xl">
+              <h1 className="text-4xl xl:text-5xl">
                 Forex, Índices, Ações e mais com a Trader 4xc - corretora online
                 n.º 1
               </h1>
             </div>
 
-            <div className="flex-1  text-right">
+            <div className="xl:flex-1  text-right">
               <ButtonOrLink className={'bg-white text-custom__blue'}>
                 Negocie como um pro
               </ButtonOrLink>
@@ -59,9 +59,9 @@ export default function Home() {
 
       <PickAccountSection />
 
-      <AppSection />
-
       <TradingPlataform />
+
+      <AppSection />
 
       <InteractiveGallery />
 
