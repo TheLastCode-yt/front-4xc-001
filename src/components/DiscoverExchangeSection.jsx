@@ -38,7 +38,11 @@ const DiscoverExchangeSection = () => {
           {/* cards */}
           <div className="flex items-center flex-col xl:flex-row xl:justify-between gap-x-6 xl:gap-y-0 gap-y-10">
             {cardData.map((card, index) => (
-              <Card key={index} title={card.title} text={card.text} />
+              <Card
+                key={`${index}-m-card-@22`}
+                title={card.title}
+                text={card.text}
+              />
             ))}
           </div>
 

@@ -16,10 +16,10 @@ const Footer = () => {
           <Link href={'/'}>
             <Image
               alt="logo"
-              width={90}
+              width={68}
               height={26}
-              src="/icons/fxProLogo.svg"
-              className="cursor-pointer"
+              src="/icons/logo.svg"
+              className="cursor-pointer invert"
             />
           </Link>
         </div>

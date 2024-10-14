@@ -25,7 +25,7 @@ const PricingOrdersSection = () => {
           <div className="flex items-center flex-col xl:flex-row xl:justify-between gap-10">
             {cardData.map((card, index) => (
               <Card
-                key={index}
+                key={`${index}-${card.title}m`}
                 title={card.title}
                 text={card.text}
                 backgroundText={card.backgroundText}

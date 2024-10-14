@@ -12,20 +12,20 @@ const DataCenterSection = () => {
               Centro de Dados de ponta e agregador interno
             </h2>
             <p className="text-sm leading-[170%]">
-              Na Trader 4xc, nosso centro de dados de ponta em LD4 London posiciona
-              estrategicamente nossos servidores de negociação para execução
-              extremamente rápida. Co-localizado nesta instalação de última
-              geração e perfeitamente conectado com bancos de Nível 1, nosso
-              agregador proprietário, Quotix, garante que suas negociações sejam
-              executadas rapidamente aos melhores preços, oferecendo eficiência
-              incomparável
+              Na Trader 4xc, nosso centro de dados de ponta em LD4 London
+              posiciona estrategicamente nossos servidores de negociação para
+              execução extremamente rápida. Co-localizado nesta instalação de
+              última geração e perfeitamente conectado com bancos de Nível 1,
+              nosso agregador proprietário, Quotix, garante que suas negociações
+              sejam executadas rapidamente aos melhores preços, oferecendo
+              eficiência incomparável
             </p>
           </div>
 
           {/* image */}
           <div>
             <Image
-              src="/images/data-center.webp"
+              src="/images/data-center.png"
               alt="data center"
               height={2100}
               width={1350}
