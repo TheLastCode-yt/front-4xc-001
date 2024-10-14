@@ -5,7 +5,8 @@ import { cn } from '@/lib/utils';
 
 const TextReveal = ({
   children,
-  color = 'red',
+  // color = 'red',
+  color = '#0051ff',
   as: Element = 'h1',
   duration = 1,
   direction = 'left',

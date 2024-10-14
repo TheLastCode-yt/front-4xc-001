@@ -28,9 +28,9 @@ const PickAccountSection = () => {
       carouselText: 'Elite',
     },
     {
-      title: '4XC',
+      title: 'Trader 4XC',
       text: 'Acesso a ativos com retorno de até 95%. Ferramentas Profundas: Plataforma avançada com ferramentas de trading e gráficos em tempo real. Acesso a Sinais de Trading: Sinais de operações diárias de especialistas. Copy trade Gestão de Risco: Ferramentas básicas de gestão de risco, como stop loss.',
-      deposit: 'Depósito de 100 dólares',
+      deposit: 'Depósito de 200 dólares',
       href: '/',
       carouselText: 'cTrader',
     },
