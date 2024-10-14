@@ -137,7 +137,8 @@ const PrecautionsSection = () => {
             {/* container for download pdfs */}
             <div className="col-span-6  bg-white flex gap-x-8 p-8 w-full">
               <CardDownloadPdf
-                img="fraudulent-websites-img"
+                // img="fraudulent-websites-img"
+                img="pdf-icon"
                 link="/"
                 text={'Como identificar sites fraudulentos'}
               />
@@ -145,7 +146,8 @@ const PrecautionsSection = () => {
 
             <div className="col-span-6 bg-white flex gap-x-8 p-8">
               <CardDownloadPdf
-                img={'fraudulent-websites-protect'}
+                // img={'fraudulent-websites-protect'}
+                img="pdf-icon"
                 link="/"
                 text={'Principais dicas para segurança online'}
               />

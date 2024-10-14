@@ -3,14 +3,12 @@ import Link from 'next/link';
 
 const RecommendedDepositSection = () => {
   const currencyData = [
-    { title: 'USD', text: '$1000' },
-    { title: 'EUR', text: '€1000' },
-    { title: 'GBP', text: '£1000' },
-    { title: 'CHF', text: '₣1000' },
-    { title: 'PLN', text: 'zł4000' },
-    { title: 'AUD', text: '$1000' },
-    { title: 'JPY', text: '¥100,000' },
-    { title: 'ZAR', text: '17,000' },
+    { title: 'USD', text: '$5' },
+    { title: 'EUR', text: '€5' },
+    { title: 'GBP', text: '£5' },
+    { title: 'CHF', text: '₣5' },
+    { title: 'AUD', text: '$5' },
+    { title: 'BRL', text: 'R$50' },
   ];
   return (
     <section>
@@ -53,7 +51,7 @@ const RecommendedDepositSection = () => {
 
 const CurrencyCard = ({ title, text }) => {
   return (
-    <div className="flex flex-col flex-1">
+    <div className="flex flex-col flex-1 items-center">
       <span className="text-lg font-bold text-[#2d3436]">{title}</span>
       <span className="text-4xl font-light text-[#b68756]">{text}</span>
     </div>

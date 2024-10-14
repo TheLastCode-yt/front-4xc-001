@@ -30,7 +30,7 @@ const FeatureCardSection = () => {
               }}
               viewport={{ once: true }}
               variants={slideUp}
-              className="border border-[#212529] xl:h-[210px]  rounded-md group text-center relative  flex-1"
+              className="border border-[#212529] xl:h-[210px]  rounded-md group text-center relative  flex-1 w-full"
             >
               <Link
                 href={item.href}
