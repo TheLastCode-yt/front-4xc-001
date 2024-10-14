@@ -66,7 +66,7 @@ const TradingPlataform = () => {
           {/* image */}
           <div className="relative w-full flex items-center justify-center flex-col  gap-y-3 xl:flex-row">
             <Image
-              src="/images/teste22.webp"
+              src="/images/teste33.webp"
               alt="platforms trading"
               width={720}
               height={400}
