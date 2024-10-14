@@ -19,8 +19,10 @@ const Accordion = ({ question, answer, index }) => {
         onClick={toggleAccordion}
         className="flex justify-between items-center w-full py-4 px-6 text-left focus:outline-none"
       >
-        <span className="text-xl font-medium">{question}</span>
-        <span>{isOpen ? '-' : '+'}</span>
+        <span className="text-xl font-medium max-w-[90%] ">{question}</span>
+        <span className="w-[10%]  inline-flex items-center justify-center">
+          {isOpen ? '-' : '+'}
+        </span>
       </button>
       <motion.div
         initial={{ opacity: 0 }}
