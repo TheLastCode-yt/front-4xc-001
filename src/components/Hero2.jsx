@@ -17,7 +17,7 @@ const Hero2 = () => {
                 </TextReveal>
 
                 <TextReveal as="h2" className={'text-xl'} direction="right">
-                  Com mais de 13 anos de experiência no mercado, somos a
+                  Com mais de 18 anos de experiência no mercado, somos a
                   corretora de opções binárias mais utilizada na Europa. Nossa
                   trajetória é marcada por transparência, confiabilidade e
                   inovação, tornando-nos uma escolha preferencial para traders

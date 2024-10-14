@@ -106,7 +106,7 @@ const AchievementsSection = () => {
     {
       title: '7,800,000+',
       subtitle: 'client accounts',
-      text: 'FxPro has been providing online trading services to clients since 2002 and it currently serves 173 countries worldwide.',
+      text: '4XC has been providing online trading services to clients since 2002 and it currently serves 173 countries worldwide.',
       carouselText: 'client accounts',
       containerHeight: 'h-[460px]',
       className: 'xl:w-[570px] xl:pl-[135px] xl:mt-[50px]',
@@ -114,7 +114,7 @@ const AchievementsSection = () => {
     {
       title: '112+',
       subtitle: 'Awards',
-      text: 'FxPro has received constant recognition in the industry, winning over 112 international awards to date for the quality of its services.',
+      text: '4XC has received constant recognition in the industry, winning over 112 international awards to date for the quality of its services.',
       carouselText: 'Awards',
       containerHeight: 'h-[460px]',
       className: 'xl:w-[430px] xl:-ml-[160px] xl:mt-[150px] xl:pl-[30px]',
@@ -130,7 +130,7 @@ const AchievementsSection = () => {
     {
       title: '5',
       subtitle: 'industry regulations',
-      text: 'FxPro is well-known throughout the industry as a trustworthy and reliable broker. We are regulated by the FCA, CySEC, FSCA and SCB.',
+      text: '4XC is well-known throughout the industry as a trustworthy and reliable broker. We are regulated by the FCA, CySEC, FSCA and SCB.',
       carouselText: 'industry regulations',
       containerHeight: 'h-[460px]',
       className: 'xl:pl-[30px] xl:w-[480px] xl:-ml-[100px] xl:mt-[80px]',

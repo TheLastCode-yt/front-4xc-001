@@ -31,8 +31,8 @@ const Header = () => {
                 alt="logo"
                 width={68}
                 height={26}
-                src="/icons/logo.svg"
-                className="cursor-pointer invert"
+                src="/icons/logo-blue.svg"
+                className="cursor-pointer"
               />
             </Link>
           </div>

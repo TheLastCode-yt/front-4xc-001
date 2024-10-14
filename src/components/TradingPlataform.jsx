@@ -8,7 +8,7 @@ const TradingPlataform = () => {
     {
       title: 'Plataforma de trading Trader 4xc',
       text: 'Eleve o seu trading com os nossos produtos',
-      img: '/icons/fxpro-trading.svg',
+      img: '/icons/logo-blue.svg',
       href: '/',
     },
     {
@@ -108,7 +108,13 @@ const Card = ({ img, title, text, href, className }) => {
       )}
     >
       <picture>
-        <Image width={50} height={50} src={img} alt={title} />
+        <Image
+          width={50}
+          height={50}
+          src={img}
+          alt={title}
+          className="w-full max-w-[70px]"
+        />
       </picture>
 
       <div>
