@@ -5,19 +5,23 @@ import TextReveal from './TextReveal';
 
 const Hero2 = () => {
   return (
-    <section>
-      <div className="w-full min-h-[40vw] bg-no-repeat py-20 text-black">
-        <div className="container mx-auto relative pt-10 h-[708px] bg-green-500">
+    <section className="bg-black">
+      <div className="w-full min-h-[40vw] bg-no-repeat py-20">
+        <div className="container mx-auto relative pt-10 ">
           {/* titles */}
-          <div className="flex items-center justify-center h-full">
-            <div className="flex flex-col">
-              <div>
-                <TextReveal as="h1" className={'text-5xl'}>
+          <div className="flex items-center justify-between h-full flex-col xl:flex-row gap-y-20">
+            <div className="flex flex-col gap-y-10 flex-1">
+              <div className="flex flex-col gap-y-6">
+                <TextReveal as="h1" className={'text-5xl font-semibold'}>
                   Transforme conhecimento em lucro com a 4xc
                 </TextReveal>
 
-                <TextReveal as="h2" className={'text-5xl'} direction="right">
-                  Estratégias personalizadas para cada trader.
+                <TextReveal as="h2" className={'text-xl'} direction="right">
+                  Com mais de 13 anos de experiência no mercado, somos a
+                  corretora de opções binárias mais utilizada na Europa. Nossa
+                  trajetória é marcada por transparência, confiabilidade e
+                  inovação, tornando-nos uma escolha preferencial para traders
+                  em busca de segurança e desempenho.
                 </TextReveal>
               </div>
 
@@ -29,6 +33,16 @@ const Hero2 = () => {
                   Registre-se com os Pros
                 </ButtonOrLink>
               </div>
+            </div>
+
+            {/* image */}
+            <div className="flex-1">
+              <Image
+                src="/images/devices.png"
+                width={2177}
+                height={1172}
+                alt="background devices"
+              />
             </div>
           </div>
         </div>
