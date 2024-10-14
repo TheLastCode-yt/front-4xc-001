@@ -45,13 +45,13 @@ const AppSection = () => {
           </div>
 
           {/* image */}
-          <div className="order-2  mx-auto">
+          <div className="order-2  mx-auto ">
             <Image
               src="/images/trade-on-mobile.webp"
               alt="trader app mobile"
               width={400}
               height={619}
-              className="w-auto max-h-[620px]"
+              className="w-auto max-h-[620px] xl:min-w-[400px]"
             />
           </div>
 

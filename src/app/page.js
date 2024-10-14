@@ -7,6 +7,7 @@ import AppSection from '@/components/AppSection';
 import TradingPlataform from '@/components/TradingPlataform';
 import PickAccountSection from '@/components/PickAccountSection';
 import AchievementsSection from '@/components/AchievementsSection';
+import Hero2 from '@/components/Hero2';
 
 export default function Home() {
   const items = [
@@ -36,7 +37,8 @@ export default function Home() {
 
   return (
     <main className="overflow-x-hidden pt-[64px] flex flex-col gap-y-20">
-      <Hero />
+      {/* <Hero /> */}
+      <Hero2 />
 
       <section className="w-full px-[10px]">
         <div className="container mx-auto bg-custom__blue">
