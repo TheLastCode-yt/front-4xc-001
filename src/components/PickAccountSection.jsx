@@ -28,7 +28,7 @@ const PickAccountSection = () => {
       carouselText: 'Elite',
     },
     {
-      title: 'cTrader',
+      title: '4XC',
       text: 'Use the cTrader platform range and get ultra-low spreads from 0.2 with a competitive commission of $35 per $1million traded.',
       deposit: 'Depositar de 50',
       href: '/',
