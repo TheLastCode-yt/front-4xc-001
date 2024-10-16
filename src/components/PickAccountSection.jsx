@@ -35,6 +35,7 @@ const PickAccountSection = () => {
       carouselText: 'cTrader',
     },
   ];
+
   const [activeDiv, setActiveDiv] = useState(null);
   const [selectedDiv, setSelectedDiv] = useState(accountsTypes[0]);
   const handleMouseEnter = index => {

@@ -139,7 +139,7 @@ const PrecautionsSection = () => {
               <CardDownloadPdf
                 // img="fraudulent-websites-img"
                 img="pdf-icon"
-                link="/"
+                link="/docs/4xc-safety_page.pdf"
                 text={'Como identificar sites fraudulentos'}
               />
             </div>
@@ -148,7 +148,7 @@ const PrecautionsSection = () => {
               <CardDownloadPdf
                 // img={'fraudulent-websites-protect'}
                 img="pdf-icon"
-                link="/"
+                link="/docs/4XC_Top_tips_for_online_safety.pdf"
                 text={'Principais dicas para segurança online'}
               />
             </div>
@@ -169,7 +169,11 @@ const PrecautionsSection = () => {
 
 const CardDownloadPdf = ({ text, link, img }) => {
   return (
-    <Link href={link} className=" bg-white flex gap-x-8 p-2 md:p-8">
+    <Link
+      href={link}
+      className=" bg-white flex gap-x-8 p-2 md:p-8"
+      target="_blank"
+    >
       <Image
         src={`/icons/${img}.svg`}
         width={100}

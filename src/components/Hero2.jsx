@@ -5,7 +5,10 @@ import TextReveal from './TextReveal';
 
 const Hero2 = () => {
   return (
-    <section className="bg-black">
+    <section
+      className="bg-contain bg-no-repeat bg-black  py-[50px]"
+      style={{ backgroundImage: 'url("/images/agua3.png")' }}
+    >
       <div className="w-full min-h-[40vw] bg-no-repeat py-20">
         <div className="container mx-auto relative pt-10 ">
           {/* titles */}

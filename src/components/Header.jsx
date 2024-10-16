@@ -62,7 +62,7 @@ const Header = () => {
                 <ButtonOrLink
                   href={'https://trader4xc.com/signup/'}
                   className={
-                    'xl:py-[10px] xl:px-[20px] py-[8px] px-[16px] xl:text-base text-sm'
+                    'xl:py-[10px] xl:px-[20px] py-[8px] px-[16px] xl:text-base text-sm '
                   }
                 >
                   Registre-se

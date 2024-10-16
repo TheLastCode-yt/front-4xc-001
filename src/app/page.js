@@ -8,37 +8,15 @@ import TradingPlataform from '@/components/TradingPlataform';
 import PickAccountSection from '@/components/PickAccountSection';
 import AchievementsSection from '@/components/AchievementsSection';
 import Hero2 from '@/components/Hero2';
+import LiveMarketSection from '@/components/LiveMarketSection';
 
 export default function Home() {
-  const items = [
-    {
-      quote:
-        'A única maneira de fazer um excelente trabalho é amar o que você faz.',
-      name: 'Steve Jobs',
-      title: 'Co-Fundador da Apple',
-    },
-    {
-      quote: 'O sucesso é a soma de pequenos esforços repetidos dia após dia.',
-      name: 'Robert Collier',
-      title: 'Autor',
-    },
-    {
-      quote: 'Não importa o quão devagar você vá, desde que você não pare.',
-      name: 'Confúcio',
-      title: 'Filósofo',
-    },
-    {
-      quote:
-        'A vida é realmente simples, mas insistimos em torná-la complicada.',
-      name: 'Confúcio',
-      title: 'Filósofo',
-    },
-  ];
-
   return (
     <main className="overflow-x-hidden pt-[64px] flex flex-col gap-y-20">
       {/* <Hero /> */}
       <Hero2 />
+
+      <LiveMarketSection />
 
       <section className="w-full px-[10px]">
         <div className="container mx-auto bg-custom__blue">
