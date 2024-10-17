@@ -48,7 +48,7 @@ const LiveMarketSection = () => {
 
         <div className="flex flex-col xl:gap-y-4">
           {/* Botões de seleção */}
-          <div className="flex items-center xl:justify-center xl:gap-x-20 mb-6  overflow-hidden overflow-x-scroll">
+          <div className="flex items-center xl:justify-center xl:gap-x-20 mb-6  overflow-hidden overflow-x-scroll remove-scroll-bar">
             {options.map(option => (
               <button
                 key={option.value}

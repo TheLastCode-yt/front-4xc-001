@@ -16,7 +16,7 @@ const Hero2 = () => {
             <div className="flex flex-col gap-y-10 flex-1">
               <div className="flex flex-col gap-y-6">
                 <TextReveal as="h1" className={'text-5xl font-semibold'}>
-                  Transforme conhecimento em lucro com a 4xc
+                  Transforme conhecimento em lucro com a Trader 4xc
                 </TextReveal>
 
                 <TextReveal as="h2" className={'text-xl'} direction="right">

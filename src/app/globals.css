@@ -56,6 +56,15 @@ body {
   .divion-before-xl {
     transform: skew(-26deg, 11deg) rotate(-13deg) translate(-25px, -50%);
   }
+
+  .remove-scroll-bar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .remove-scroll-bar::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 /* carousel */
