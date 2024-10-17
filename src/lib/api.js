@@ -29,7 +29,7 @@ export const fetchCryptoData = async (symbol, apiKey) => {
 
   const bidPrice = data['Realtime Currency Exchange Rate']['8. Bid Price'];
   const askPrice = data['Realtime Currency Exchange Rate']['9. Ask Price'];
-  console.log('sou o data', data);
+  // console.log('sou o data', data);
   return { code, name, bidPrice, askPrice };
 };
 

@@ -40,7 +40,7 @@ const LiveMarketSection = () => {
   // Função para renderizar os dados conforme a opção selecionada
 
   return (
-    <section className="text-white -mt-[40%] xl:-mt-[15%] bg-black">
+    <section className="text-white -mt-[40%] xl:-mt-[15%] ">
       <div className="container mx-auto p-4">
         {/* <button onClick={() => console.log(stocksData.data)}>
           console.log
