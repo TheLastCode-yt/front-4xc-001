@@ -9,6 +9,7 @@ import PickAccountSection from '@/components/PickAccountSection';
 import AchievementsSection from '@/components/AchievementsSection';
 import Hero2 from '@/components/Hero2';
 import LiveMarketSection from '@/components/LiveMarketSection';
+import WhyChooseUsSection from '@/components/WhyChooseUsSection';
 
 export default function Home() {
   return (
@@ -44,6 +45,8 @@ export default function Home() {
       <AppSection />
 
       <InteractiveGallery />
+
+      <WhyChooseUsSection />
 
       <AchievementsSection />
 

@@ -7,7 +7,7 @@ const Hero2 = () => {
   return (
     <section
       className="bg-contain bg-no-repeat bg-black  py-[50px]"
-      style={{ backgroundImage: 'url("/images/agua3333.png")' }}
+      style={{ backgroundImage: 'url("/images/testando3000.png")' }}
     >
       <div />
       <div className="w-full min-h-[40vw] bg-no-repeat py-20">
@@ -42,7 +42,7 @@ const Hero2 = () => {
             {/* image */}
             <div className="flex-1">
               <Image
-                src="/images/cas.png"
+                src="/images/hero-24.png"
                 width={2177}
                 height={1172}
                 alt="background devices"

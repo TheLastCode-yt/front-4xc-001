@@ -3,12 +3,12 @@ import Image from 'next/image';
 const OurHistorySection = () => {
   const historyData = [
     {
-      img: 'logo-history-1',
+      img: 'logo-blue',
       title: 'Ideia concebida 2002',
       text: 'Remodelando o comércio online',
     },
     {
-      img: 'logo-history-2',
+      img: 'logo-blue',
       title: 'Primeiro site',
       text: '2006',
     },
@@ -17,7 +17,7 @@ const OurHistorySection = () => {
       text: 'Primeira corretora a patrocinar uma equipe de F1',
     },
     {
-      img: 'logo-history-3',
+      img: 'logo-blue',
       title: 'Expansão exponencial',
       text: '2012',
     },
@@ -26,7 +26,7 @@ const OurHistorySection = () => {
       text: 'Votada como a "Melhor Corretora" pela Financial Times 2010-2019.',
     },
     {
-      img: 'logo-history-4',
+      img: 'logo-blue',
       title: 'Grande transformação da marca',
       text: '2017',
     },
@@ -35,16 +35,61 @@ const OurHistorySection = () => {
       text: 'Patrocinador da equipa McLaren F1.',
     },
     {
-      img: 'logo-history-5',
+      img: 'logo-blue',
       title: 'Trader 4xc hoje',
       text: '2023',
     },
     {
-      img: 'logo-history-6',
+      img: 'logo-blue',
       title: 'Trader 4xc Amanhã',
       text: '2025',
     },
   ];
+
+  // const historyData = [
+  //   {
+  //     img: 'logo-history-1',
+  //     title: 'Ideia concebida 2002',
+  //     text: 'Remodelando o comércio online',
+  //   },
+  //   {
+  //     img: 'logo-history-2',
+  //     title: 'Primeiro site',
+  //     text: '2006',
+  //   },
+  //   {
+  //     title: '2008',
+  //     text: 'Primeira corretora a patrocinar uma equipe de F1',
+  //   },
+  //   {
+  //     img: 'logo-history-3',
+  //     title: 'Expansão exponencial',
+  //     text: '2012',
+  //   },
+  //   {
+  //     title: '2015',
+  //     text: 'Votada como a "Melhor Corretora" pela Financial Times 2010-2019.',
+  //   },
+  //   {
+  //     img: 'logo-history-4',
+  //     title: 'Grande transformação da marca',
+  //     text: '2017',
+  //   },
+  //   {
+  //     title: '2018',
+  //     text: 'Patrocinador da equipa McLaren F1.',
+  //   },
+  //   {
+  //     img: 'logo-history-5',
+  //     title: 'Trader 4xc hoje',
+  //     text: '2023',
+  //   },
+  //   {
+  //     img: 'logo-history-6',
+  //     title: 'Trader 4xc Amanhã',
+  //     text: '2025',
+  //   },
+  // ];
   return (
     <section className="w-full  xl:block hidden">
       <div className="flex flex-col xl:gap-y-24 items-center justify-center">
@@ -80,7 +125,7 @@ const Card = ({ img, title, text }) => {
           height={170}
           alt={img}
           src={`/icons/${img}.svg`}
-          className="2xl:min-w-[170px] 2xl:min-h-[170px] 2xl:max-w-none max-w-[140px]"
+          className="2xl:w-[100px] h-[100px] 2xl:max-w-none max-w-[140px]"
         />
       </div>
 

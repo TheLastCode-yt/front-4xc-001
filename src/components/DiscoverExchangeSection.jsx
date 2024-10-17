@@ -78,7 +78,7 @@ const DiscoverExchangeSection = () => {
             {/* image */}
             <div className="px-12 xl:col-auto col-span-6">
               <Image
-                src="/images/advantages.webp"
+                src="/images/advantages-3.png"
                 width={1496}
                 height={1722}
                 alt="advantages"

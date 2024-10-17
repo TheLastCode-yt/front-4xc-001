@@ -102,12 +102,19 @@ const WhyOpenAccountSection = () => {
 
             {/* gif */}
             <Image
-              src="/gif/desktop.gif"
+              src="/images/iMac-mockup.png"
               width={770}
               height={574}
               alt="gif desktop animation"
               className="w-auto"
             />
+            {/* <Image
+              src="/gif/desktop.gif"
+              width={770}
+              height={574}
+              alt="gif desktop animation"
+              className="w-auto"
+            /> */}
           </div>
 
           {/* section 3 */}

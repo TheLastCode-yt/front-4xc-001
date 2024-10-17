@@ -164,7 +164,7 @@ export async function GET() {
         data: forexDataWithImages,
       },
       crypto: {
-        sectionTitle: 'Principais Criptomoedas',
+        sectionTitle: 'Criptomoedas',
         sectionLink: '/crypto',
         data: cryptoDataWithImages,
       },
@@ -174,7 +174,7 @@ export async function GET() {
         data: stockDataWithImages,
       },
       commodities: {
-        sectionTitle: 'Commodities Importantes',
+        sectionTitle: 'Commodities',
         sectionLink: '/commodities',
         data: commodityDataWithImages,
       },

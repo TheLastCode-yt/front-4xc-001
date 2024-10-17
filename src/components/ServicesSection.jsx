@@ -77,7 +77,7 @@ const ServicesSection = () => {
                   width={300}
                   height={320}
                   alt="image"
-                  src="/images/learn.webp"
+                  src="/images/hand-4xc-2.png"
                 />
               </div>
               {/* text */}
@@ -101,7 +101,7 @@ const ServicesSection = () => {
                   width={300}
                   height={320}
                   alt="image"
-                  src="/images/guides.webp"
+                  src="/images/mul.png"
                 />
               </div>
               {/* text */}
