@@ -42,7 +42,7 @@ const Hero2 = () => {
             {/* image */}
             <div className="flex-1">
               <Image
-                src="/images/hero-24.png"
+                src="/images/russ.png"
                 width={2177}
                 height={1172}
                 alt="background devices"

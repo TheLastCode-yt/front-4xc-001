@@ -46,7 +46,7 @@ const LiveMarketSection = () => {
           console.log
         </button> */}
 
-        <div className="flex flex-col xl:gap-y-4">
+        <div className="flex flex-col">
           {/* Botões de seleção */}
           <div className="flex items-center xl:justify-center xl:gap-x-20 mb-6  overflow-hidden overflow-x-scroll remove-scroll-bar">
             {options.map(option => (
@@ -145,7 +145,7 @@ const Table = ({ selectedOption, sectionTitle, sectionLink, data }) => {
   return (
     <div className="w-full flex flex-col bg-black text-white rounded shadow shadow-white">
       {/* header */}
-      <div className="grid grid-cols-6 xl:grid-cols-12 items-center py-6 px-4 bg-custom__blue-focus xl:gap-y-0 gap-y-4">
+      <div className="grid grid-cols-6 xl:grid-cols-12 items-center py-6 px-4 bg-[#013178] xl:gap-y-0 gap-y-4">
         <div className="col-span-6 xl:col-span-4 flex items-start">
           <Link
             href={sectionLink}
