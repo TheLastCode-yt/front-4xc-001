@@ -34,7 +34,7 @@ const FeatureCardSection = () => {
             >
               <Link
                 href={item.href}
-                className=" flex flex-col gap-y-6 items-center justify-center  hover:bg-[#303135] transition-all duration-300  w-full h-full px-4 py-10 xl:py-14 xl:px-5"
+                className=" flex flex-col gap-y-6 items-center justify-center  hover:bg-[#013178] transition-all duration-300  w-full h-full px-4 py-10 xl:py-14 xl:px-5"
               >
                 {/* icon */}
                 <Image

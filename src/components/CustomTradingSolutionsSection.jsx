@@ -71,7 +71,7 @@ const CustomTradingSolutionsSection = () => {
                 <Link
                   href={item.btnLink}
                   // className="border-[#303135] border text-[#2d3436] text-lg font-medium min-h-[65px] min-w-[250px] py-6 rounded hover:bg-[#303135] hover:text-white transition-all duration-300"
-                  className="btn-common border-[#303135] border text-[#2d3436] hover:bg-[#303135] hover:text-white w-fit"
+                  className="btn-common border-[#013178] border text-[#2d3436] hover:bg-[#013178] hover:text-white w-fit"
                 >
                   {item.btnText}
                 </Link>

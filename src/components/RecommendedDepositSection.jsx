@@ -32,7 +32,7 @@ const RecommendedDepositSection = () => {
           </div>
 
           <div className="text-center">
-            <Link href={'/'} className="btn bg-[#303135] mb-4">
+            <Link href={'/'} className="btn bg-[#013178] mb-4">
               Comece a negociar agora
             </Link>
 

@@ -40,7 +40,7 @@ const page = () => {
           <Link
             /*  hover:shadow-[0_6px_10px_0_#00000040] */
             href={'/'}
-            className="text-lg relative inline-flex items-center justify-center bg-[#303135] text-white rounded-lg w-fit min-w-[230px] min-h-[70px] text-center transition-all hover:-translate-y-0.5 
+            className="text-lg relative inline-flex items-center justify-center bg-[#013178] text-white rounded-lg w-fit min-w-[230px] min-h-[70px] text-center transition-all hover:-translate-y-0.5 
             px-8 hover:shadow hover:shadow-[#00000040]"
           >
             Abra Conta

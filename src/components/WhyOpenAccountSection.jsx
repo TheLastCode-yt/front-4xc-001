@@ -50,7 +50,7 @@ const WhyOpenAccountSection = () => {
                   <Link
                     href={item.href}
                     key={`${index}+${item.title}`}
-                    className="flex flex-col items-center gap-y-6 group hover:bg-[#303135] border border-[#3031351a] transition-all duration-300 xl:h-[310px] py-12 px-8 text-center"
+                    className="flex flex-col items-center gap-y-6 group hover:bg-[#013178] border border-[#3031351a] transition-all duration-300 xl:h-[310px] py-12 px-8 text-center"
                   >
                     <Image
                       src={`${`/icons/${item.icon}.svg`}`}

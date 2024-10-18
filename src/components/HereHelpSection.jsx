@@ -23,14 +23,15 @@ const HereHelpSection = () => {
       title: 'Baixar os Guias',
       text: 'Todas as instruções em PDF em um só lugar',
       href: '/',
-      img: 'guides',
-      className: 'bg-custom__blue text-white',
+      img: '/images/beta5.png',
+      className: 'text-white',
     },
     {
       title: 'Assista e Aprenda',
       text: 'Suas perguntas respondidas em vídeos',
       href: '/',
-      img: 'learn',
+      img: '/images/beta10.png',
+      className: 'text-white',
     },
   ];
 
@@ -96,7 +97,7 @@ const Card = ({ img, title, text, href, className }) => {
     <Link
       href={href}
       className={cn(
-        'bg-[#F4F4F4] text-black flex flex-col justify-center items-center gap-y-6 w-fit h-full p-24 text-center',
+        'bg-[#013178] text-black flex flex-col justify-center items-center gap-y-6 w-fit h-full p-24 text-center',
         className
       )}
     >
@@ -104,7 +105,7 @@ const Card = ({ img, title, text, href, className }) => {
         <Image
           width={390}
           height={273}
-          src={`/images/${img}.webp`}
+          src={img}
           alt={title}
           className="max-h-[320px] w-auto"
         />

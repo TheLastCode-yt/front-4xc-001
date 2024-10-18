@@ -13,7 +13,7 @@ const Accordion = ({ question, answer, index }) => {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.2 }}
-      className="border border-gray-300 rounded-lg bg-[#303135] w-full xl:col-span-2 col-span-6 h-fit min-h-[88px]"
+      className="border border-gray-300 rounded-lg bg-[#013178] w-full xl:col-span-2 col-span-6 h-fit min-h-[88px]"
     >
       <button
         onClick={toggleAccordion}

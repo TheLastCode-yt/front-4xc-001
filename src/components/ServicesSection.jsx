@@ -9,7 +9,7 @@ const ServicesSection = () => {
           <div className=" flex items-center justify-center col-span-6 md:col-span-3 h-full">
             <Link
               href="/"
-              className="flex items-center text-center xl:text-left xl:flex-row flex-col xl:items-start p-10 justify-center gap-x-6 xl:max-w-[80%] bg-[#303135] rounded-lg h-full"
+              className="flex items-center text-center xl:text-left xl:flex-row flex-col xl:items-start p-10 justify-center gap-x-6 xl:max-w-[80%] bg-[#013178] rounded-lg h-full"
             >
               <div className="bg-white p-6 rounded-full">
                 <Image
@@ -37,7 +37,7 @@ const ServicesSection = () => {
           <div className=" flex items-center justify-center col-span-6 w-full md:col-span-3 h-full">
             <Link
               href="/"
-              className="flex items-center text-center xl:text-left xl:items-start flex-col xl:flex-row p-10 justify-center gap-x-6 xl:max-w-[80%] bg-[#303135] rounded-lg h-full"
+              className="flex items-center text-center xl:text-left xl:items-start flex-col xl:flex-row p-10 justify-center gap-x-6 xl:max-w-[80%] bg-[#013178] rounded-lg h-full"
             >
               <div className="bg-white p-6 rounded-full">
                 <Image
@@ -64,7 +64,7 @@ const ServicesSection = () => {
           {/* card 4 */}
           <div className="flex items-center justify-center col-span-6 md:col-span-3 h-full w-full">
             <Link
-              className="flex flex-col bg-[#303135] gap-y-6 items-center justify-center p-10 rounded-lg  xl:max-w-[80%] h-full w-full"
+              className="flex flex-col bg-[#013178] gap-y-6 items-center justify-center p-10 rounded-lg  xl:max-w-[80%] h-full w-full"
               href={'/'}
             >
               {/* image */}
@@ -86,7 +86,7 @@ const ServicesSection = () => {
           {/* card 3 */}
           <div className=" flex items-center justify-center col-span-6 md:col-span-3">
             <Link
-              className="flex flex-col bg-[#303135] gap-y-6 items-center justify-center p-10 rounded-lg  xl:max-w-[80%] h-full w-full"
+              className="flex flex-col bg-[#013178] gap-y-6 items-center justify-center p-10 rounded-lg  xl:max-w-[80%] h-full w-full"
               href={'/'}
             >
               {/* image */}
@@ -95,7 +95,7 @@ const ServicesSection = () => {
                   width={300}
                   height={320}
                   alt="image"
-                  src="/images/beta1.png"
+                  src="/images/beta5.png"
                 />
               </div>
               {/* text */}
