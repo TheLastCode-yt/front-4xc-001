@@ -9,7 +9,7 @@ const ServicesSection = () => {
           <div className=" flex items-center justify-center col-span-6 md:col-span-3 h-full">
             <Link
               href="/"
-              className="flex items-center text-center xl:text-left xl:flex-row flex-col xl:items-start p-10 justify-center gap-x-6 xl:max-w-[80%] bg-[#f5f6f7] rounded-lg h-full"
+              className="flex items-center text-center xl:text-left xl:flex-row flex-col xl:items-start p-10 justify-center gap-x-6 xl:max-w-[80%] bg-[#303135] rounded-lg h-full"
             >
               <div className="bg-white p-6 rounded-full">
                 <Image
@@ -21,13 +21,11 @@ const ServicesSection = () => {
                 />
               </div>
               <div className="flex flex-col">
-                <p className="text-[#b68756] text-2xl font-medium">
-                  Chat ao vivo
-                </p>
-                <p className="text-[#2d3436]">
+                <p className="text-white text-2xl font-medium">Chat ao vivo</p>
+                <p className="text-white">
                   Ajuda instantânea do nosso suporte qualificado escreva-nos
                   para{' '}
-                  <span className="text-xl text-[#b68756]">
+                  <span className="text-xl text-white">
                     support@trader4xc.com
                   </span>
                 </p>
@@ -39,7 +37,7 @@ const ServicesSection = () => {
           <div className=" flex items-center justify-center col-span-6 w-full md:col-span-3 h-full">
             <Link
               href="/"
-              className="flex items-center text-center xl:text-left xl:items-start flex-col xl:flex-row p-10 justify-center gap-x-6 xl:max-w-[80%] bg-[#f5f6f7] rounded-lg h-full"
+              className="flex items-center text-center xl:text-left xl:items-start flex-col xl:flex-row p-10 justify-center gap-x-6 xl:max-w-[80%] bg-[#303135] rounded-lg h-full"
             >
               <div className="bg-white p-6 rounded-full">
                 <Image
@@ -51,15 +49,13 @@ const ServicesSection = () => {
                 />
               </div>
               <div className="flex flex-col">
-                <p className="text-[#b68756] text-2xl font-medium">
+                <p className="text-white text-2xl font-medium">
                   Solicite uma chamada de volta
                 </p>
-                <p className="text-[#2d3436]">
+                <p className="text-white">
                   Fale conosco conforme sua conveniência ou ligue para o Suporte
                   Global (Inglês){' '}
-                  <span className="text-xl text-[#b68756]">
-                    +55 11 99999-9999
-                  </span>
+                  <span className="text-xl text-white">+55 11 99999-9999</span>
                 </p>
               </div>
             </Link>
@@ -68,7 +64,7 @@ const ServicesSection = () => {
           {/* card 4 */}
           <div className="flex items-center justify-center col-span-6 md:col-span-3 h-full w-full">
             <Link
-              className="flex flex-col bg-[#f5f6f7] gap-y-6 items-center justify-center p-10 rounded-lg  xl:max-w-[80%] h-full w-full"
+              className="flex flex-col bg-[#303135] gap-y-6 items-center justify-center p-10 rounded-lg  xl:max-w-[80%] h-full w-full"
               href={'/'}
             >
               {/* image */}
@@ -77,22 +73,20 @@ const ServicesSection = () => {
                   width={300}
                   height={320}
                   alt="image"
-                  src="/images/hand-4xc-2.png"
+                  src="/images/beta10.png"
                 />
               </div>
               {/* text */}
-              <p className="text-[#b68756] text-xl font-medium">
+              <p className="text-white text-xl font-medium">
                 Assista e Aprenda
               </p>
-              <p className="text-[#2d3436]">
-                Suas perguntas respondidas em vídeos
-              </p>
+              <p className="text-white">Suas perguntas respondidas em vídeos</p>
             </Link>
           </div>
           {/* card 3 */}
           <div className=" flex items-center justify-center col-span-6 md:col-span-3">
             <Link
-              className="flex flex-col bg-[#f5f6f7] gap-y-6 items-center justify-center p-10 rounded-lg  xl:max-w-[80%] h-full w-full"
+              className="flex flex-col bg-[#303135] gap-y-6 items-center justify-center p-10 rounded-lg  xl:max-w-[80%] h-full w-full"
               href={'/'}
             >
               {/* image */}
@@ -101,14 +95,12 @@ const ServicesSection = () => {
                   width={300}
                   height={320}
                   alt="image"
-                  src="/images/mul.png"
+                  src="/images/beta1.png"
                 />
               </div>
               {/* text */}
-              <p className="text-[#b68756] text-xl font-medium">
-                Baixar os Guias
-              </p>
-              <p className="text-[#2d3436]">
+              <p className="text-white text-xl font-medium">Baixar os Guias</p>
+              <p className="text-white">
                 Todas as instruções em PDF em um só lugar
               </p>
             </Link>
