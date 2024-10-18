@@ -30,9 +30,10 @@ const WhyChooseUsSection = () => {
           {/* image */}
           <div className="flex-1 flex items-center justify-center">
             <Image
-              src="/images/phones-redesign.webp"
-              width={350}
-              height={520}
+              // src="/images/phones-redesign.webp"
+              src="/images/mockuuup.png"
+              width={500}
+              height={945}
               alt="telephones mockup image graphic"
             />
           </div>
