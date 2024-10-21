@@ -11,10 +11,10 @@ const Header = () => {
   const pathname = usePathname();
 
   const links = [
-    { name: 'abrir conta', url: '/account/open' },
-    { name: 'metodos de deposito', url: '/pricing/deposit-methods' },
-    { name: 'modelo', url: '/pricing/model' },
-    { name: 'segurança', url: '/safety' },
+    { name: 'Abrir conta', url: '/account/open' },
+    { name: 'Métodos de deposito', url: '/pricing/deposit-methods' },
+    { name: 'Modelo', url: '/pricing/model' },
+    { name: 'Segurança', url: '/safety' },
   ];
 
   const toggleMenu = () => {
