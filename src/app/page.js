@@ -38,6 +38,8 @@ export default function Home() {
         </div>
       </section>
 
+      <WhyChooseUsSection />
+
       <PickAccountSection />
 
       <TradingPlataform />
@@ -45,8 +47,6 @@ export default function Home() {
       <AppSection />
 
       <InteractiveGallery />
-
-      <WhyChooseUsSection />
 
       <AchievementsSection />
 
