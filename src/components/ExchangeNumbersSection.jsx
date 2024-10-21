@@ -2,7 +2,7 @@ import React from 'react';
 
 const ExchangeNumbersSection = () => {
   const numbersData = [
-    { title: '€100.000.000', text: 'capital da empresa (nível Tier 1)' },
+    { title: '€780.000.000', text: 'capital da empresa (nível Tier 1)' },
     { title: '22', text: 'anos de sucesso na indústria' },
     { title: '110+', text: 'prêmios internacionais' },
     { title: '9', text: 'patrocínios globais' },

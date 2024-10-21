@@ -33,7 +33,8 @@ const WalletHero = () => {
           </p>
 
           <Link
-            href={'/docs/fxpro-wallet-how-it-works.pdf'}
+            // href={'/docs/fxpro-wallet-how-it-works.pdf'}
+            href={'/'}
             target="_blank"
             className="text-[#636e72]  hover:text-[#b68756] transition-all flex gap-x-2 items-center"
           >
