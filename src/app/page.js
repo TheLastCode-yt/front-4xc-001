@@ -40,13 +40,13 @@ export default function Home() {
 
       <WhyChooseUsSection />
 
-      <PickAccountSection />
-
-      <TradingPlataform />
+      <InteractiveGallery />
 
       <AppSection />
 
-      <InteractiveGallery />
+      <PickAccountSection />
+
+      <TradingPlataform />
 
       <AchievementsSection />
 
