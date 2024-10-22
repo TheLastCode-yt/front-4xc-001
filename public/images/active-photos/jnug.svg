@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>JNUG</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="JNUG" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-79" fill="#FFAD00" x="0" y="0" width="64" height="64" rx="32"></rect>
+        <path d="M21,28 L43,28 L37.5050342,17 L26.5016781,17 L21,28 Z" id="Path-134" fill="#FFFFFF"></path>
+        <path d="M34,43 L56,43 L50.5050342,32 L39.5016781,32 L34,43 Z" id="Path-134-Copy" fill="#FFFFFF"></path>
+        <path d="M8,43 L30,43 L24.5050342,32 L13.5016781,32 L8,43 Z" id="Path-134-Copy-2" fill="#FFFFFF"></path>
+    </g>
+</svg>

@@ -14,40 +14,44 @@ const forexPairs = [
 
 const cryptoAssets = [
   { symbol: 'BTC', title: 'Bitcoin', image: '/images/active-photos/btc.svg' },
-  { symbol: 'SOL', title: 'Solana', image: '/images/active-photos/btc.svg' },
-  { symbol: 'ETH', title: 'Ethereum', image: '/images/active-photos/btc.svg' },
+  { symbol: 'SOL', title: 'Solana', image: '/images/active-photos/sol.svg' },
+  { symbol: 'ETH', title: 'Ethereum', image: '/images/active-photos/eth.png' },
 ];
 
 const stockSymbols = [
-  { symbol: 'AAPL', title: 'Apple', image: '/images/active-photos/btc.svg' },
+  { symbol: 'AAPL', title: 'Apple', image: '/images/active-photos/aapl.svg' },
   {
     symbol: 'MSFT',
     title: 'Microsoft',
-    image: '/images/active-photos/btc.svg',
+    image: '/images/active-photos/msft.svg',
   },
-  { symbol: 'GOOGL', title: 'Google', image: '/images/active-photos/btc.svg' },
-  { symbol: 'NVDA', title: 'NVIDIA', image: '/images/active-photos/btc.svg' },
-  { symbol: 'TSLA', title: 'Tesla', image: '/images/active-photos/btc.svg' },
+  {
+    symbol: 'GOOGL',
+    title: 'Google',
+    image: '/images/active-photos/alphabet.svg',
+  },
+  { symbol: 'NVDA', title: 'NVIDIA', image: '/images/active-photos/nvda.svg' },
+  { symbol: 'TSLA', title: 'Tesla', image: '/images/active-photos/tsla.svg' },
   {
     symbol: 'WBA',
     title: 'Walgreens Boots Alliance',
     image: '/images/active-photos/btc.svg',
   },
-  { symbol: 'AMZN', title: 'Amazon', image: '/images/active-photos/btc.svg' },
+  { symbol: 'AMZN', title: 'Amazon', image: '/images/active-photos/amzn.svg' },
 ];
 
 const commoditySymbols = [
-  { symbol: 'XAU', title: 'Gold', image: '/images/active-photos/btc.svg' },
-  { symbol: 'USOUSD', title: 'Oil', image: '/images/active-photos/btc.svg' },
+  { symbol: 'XAU', title: 'Gold', image: '/images/active-photos/gold.svg' },
+  { symbol: 'USOUSD', title: 'Oil', image: '/images/active-photos/usousd.svg' },
   {
     symbol: 'UKOUSD',
     title: 'Brent Oil',
-    image: '/images/active-photos/btc.svg',
+    image: '/images/active-photos/walgreens.svg',
   },
   {
     symbol: 'XAGUSD:N',
     title: 'Silver',
-    image: '/images/active-photos/btc.svg',
+    image: '/images/active-photos/silver.svg',
   },
 ];
 
@@ -55,32 +59,32 @@ const etfSymbols = [
   {
     symbol: 'SPY',
     title: 'SPDR S&P 500 ETF Trust',
-    image: '/images/active-photos/btc.svg',
+    image: '/images/active-photos/spy.svg',
   },
   {
     symbol: 'FXI',
     title: 'iShares China Large-Cap ETF',
-    image: '/images/active-photos/btc.svg',
+    image: '/images/active-photos/fxi.svg',
   },
   {
     symbol: 'JNUG',
     title: 'Direxion Daily Gold Miners Bull 2X Shares',
-    image: '/images/active-photos/btc.svg',
+    image: '/images/active-photos/jnug.svg',
   },
   {
     symbol: 'SQQQ',
     title: 'ProShares UltraPro Short QQQ',
-    image: '/images/active-photos/btc.svg',
+    image: '/images/active-photos/sqqq.svg',
   },
   {
     symbol: 'BRRR',
-    title: 'Notable ETF',
-    image: '/images/active-photos/btc.svg',
+    title: 'Valkyrie Bitcoin Fund',
+    image: '/images/active-photos/brrr.svg',
   },
   {
     symbol: 'BITB',
-    title: 'Notable ETF',
-    image: '/images/active-photos/btc.svg',
+    title: 'Bitwise Bitcoin ETF',
+    image: '/images/active-photos/bitb.svg',
   },
 ];
 
